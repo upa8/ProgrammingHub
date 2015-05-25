@@ -4,7 +4,7 @@ public class All_Sorts {
 		// Worst case
 		int a[] = {9,8,7,6,5,4,3,2,1};
 		// Best Case
-	   //int a[] = {1,2,3,4,5,6,7,8,9};
+	  // int a[] = {1,2,3,4,5,6,7,9,8};
 		
 		for(int i = 0 ; i<a.length ; i++){
 			System.out.print(a[i]);
@@ -17,7 +17,9 @@ public class All_Sorts {
 		// Improved Bubble Sort 
 				//Improved_Bubble_Sort(a);
 		//Selection Sort 
-				Selection_Sort(a);
+			//	Selection_Sort(a);
+		// Insertion Sort 
+				Insertion_Sort(a);
 		
 
 		
@@ -29,6 +31,23 @@ public class All_Sorts {
 	
 		}
 	
+	}
+
+	private static void Insertion_Sort(int[] array) {
+		// TODO Auto-generated method stub
+
+		int n = array.length;
+	        for (int j = 1; j < n; j++) {
+	            int key = array[j];
+	            int i = j-1;
+	            while ( (i > -1) && ( array [i] > key ) ) {
+	                array [i+1] = array [i];
+	                i--;
+	            }
+	            array[i+1] = key;
+	        }
+
+		
 	}
 
 	private static void Selection_Sort(int[] a) {
