@@ -2,7 +2,11 @@ import java.util.Scanner;
 
 /*
  * Question : 
-   Find out whether the Given string have all unique characters or not . 
+   Implement an algorithm to determine if a string has all unique characters What if 
+   you can not use additional data structures?
+   Complexity for this solution is :
+   Time complexity = O(n)
+   Space complexity = 0(n)
    
   
 */
