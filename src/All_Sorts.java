@@ -1,3 +1,9 @@
+/*
+ * Author : Pratik Upacharya . 
+ * Problem : 
+ * Implementation of all the sorting algorithms and their analysis using java language . 
+ * 
+ */
 
 public class All_Sorts {
 	public static void main(String[] args){
