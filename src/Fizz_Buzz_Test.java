@@ -1,8 +1,7 @@
-import java.math.BigInteger;
 import java.util.Scanner;
 
 
-public class testing {
+public class Fizz_Buzz_Test {
 	public static void main(String args[]){
 		Scanner Input = new Scanner(System.in);
 		long n = 1;//Input.nextLong();
