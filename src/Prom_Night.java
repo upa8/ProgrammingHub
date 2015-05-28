@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 
 
-public class testing {
+public class Prom_Night {
 	public static void main(String args[]) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int T = Integer.parseInt(br.readLine());		
