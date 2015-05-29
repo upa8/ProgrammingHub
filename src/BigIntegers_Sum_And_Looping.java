@@ -1,14 +1,9 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Scanner;
-import java.util.StringTokenizer;
 
 
-public class testing {
+public class BigIntegers_Sum_And_Looping {
 	public static void main(String args[]) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BigInteger n,a,b,s,result,d  ;//= BigInteger.ONE;
@@ -39,4 +34,4 @@ public class testing {
 		
 	
 	}
-}		
+}
