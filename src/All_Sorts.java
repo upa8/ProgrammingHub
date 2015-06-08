@@ -25,8 +25,9 @@ public class All_Sorts {
 		//Selection Sort 
 			//	Selection_Sort(a);
 		// Insertion Sort 
-				Insertion_Sort(a);
-		
+		//		Insertion_Sort(a);
+		//Merge Sort 
+				Merge_Sort(a);
 
 		
 		
@@ -37,6 +38,46 @@ public class All_Sorts {
 	
 		}
 	
+	}
+
+	public static void Merge_Sort(int[] a) {
+		// TODO Auto-generated method stub
+		if(a.length > 1){
+			int[] temp11 = new int[a.length/2];
+			System.arraycopy(a, 0, temp11, 0, a.length/2);
+			Merge_Sort(temp11);
+			int second_length = a.length - a.length/2;
+			int[] temp22 = new int[second_length];
+			System.arraycopy(a, a.length/2, temp22, 0, second_length);
+			Merge_Sort(temp22);
+			int merger_array[] = merge(temp11,temp22);
+			System.arraycopy(merger_array, 0, a, 0, merger_array.length);
+		}
+	}
+
+	private static int[] merge(int[] temp1, int[] temp2) {
+		// TODO Auto-generated method stub
+		
+		int temp [] = new int [temp1.length + temp2.length];
+		int current1 = 0;
+		int current2 = 0;
+		int current3 = 0;
+		while(current1 < temp1.length && current2 < temp2.length){
+			if(temp1[current1] < temp2[current2]){
+				temp[current3++] = temp1[current1++];
+			}else{
+				temp[current3++] = temp2[current2++];
+			}
+		}
+		while(current1 < temp1.length){
+			temp[current3++] = temp1[current1++];
+		}
+		while(current2 < temp2.length){
+			temp[current3++] = temp2 [current2++];
+		}
+		
+		
+		return temp;
 	}
 
 	private static void Insertion_Sort(int[] array) {
