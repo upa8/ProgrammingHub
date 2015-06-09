@@ -28,7 +28,8 @@ public class All_Sorts {
 		//		Insertion_Sort(a);
 		//Merge Sort 
 				Merge_Sort(a);
-
+		// Quick sort 
+				Quick_Sort(a, 0 , a.length - 1 );
 		
 		
 		for(int i = 0 ; i<a.length ; i++){
@@ -38,6 +39,47 @@ public class All_Sorts {
 	
 		}
 	
+	}
+
+	private static void Quick_Sort(int[] a , int first , int last ) {
+		// TODO Auto-generated method stub
+		if(last>first){
+			int pivot = partion(a, first , last);
+			Quick_Sort(a, first , pivot - 1 );
+			Quick_Sort(a, pivot + 1 , last);
+			
+		}
+		
+	}
+
+	private static int partion(int[] a, int first, int last) {
+		// TODO Auto-generated method stub
+			int pivot = a[first];
+			int low = first + 1;
+			int high = last ;
+			while (high > low){
+				while(low <=high && a[low] <= pivot){
+					low++;
+				}
+				while(low <=high && a[high] >= pivot){
+					high--;
+				}
+				if(high > low){
+					int temp = a[high];
+					a[high] = a[low];
+					a[low] = temp;
+				}
+			}
+			while(high > first && a[high] >= pivot){
+				high--;
+			}
+			if(pivot > a[high]){
+				a[first] = a[high];
+				a[high] = pivot;
+				return high;
+			}else{
+				return first;
+			}
 	}
 
 	public static void Merge_Sort(int[] a) {
