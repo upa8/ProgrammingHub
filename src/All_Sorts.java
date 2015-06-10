@@ -27,9 +27,11 @@ public class All_Sorts {
 		// Insertion Sort 
 		//		Insertion_Sort(a);
 		//Merge Sort 
-				Merge_Sort(a);
+	//			Merge_Sort(a);
 		// Quick sort 
-				Quick_Sort(a, 0 , a.length - 1 );
+//				Quick_Sort(a, 0 , a.length - 1 );
+		//Heap Sort 
+			//	Heap_Sort();
 		
 		
 		for(int i = 0 ; i<a.length ; i++){
@@ -70,6 +72,7 @@ public class All_Sorts {
 					a[low] = temp;
 				}
 			}
+
 			while(high > first && a[high] >= pivot){
 				high--;
 			}
@@ -80,6 +83,8 @@ public class All_Sorts {
 			}else{
 				return first;
 			}
+		
+			
 	}
 
 	public static void Merge_Sort(int[] a) {
