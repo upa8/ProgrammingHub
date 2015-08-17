@@ -1,6 +1,6 @@
 /*
- * Pratik Upachary
- * Finf all the permutations of a string 
+ * Pratik Upacharya
+ * Find all the permutations of a string 
  *Complexity : o(n2);
  *Solution is recursive with bracktracking approach . 
  *
