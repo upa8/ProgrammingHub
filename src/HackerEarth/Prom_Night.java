@@ -21,7 +21,7 @@ import java.math.*;
 
 class Prom_Night{
     public static void main (String [] args) throws Exception{
-    	solve s=new solve();
+    	solve s = new solve();
     	s.sol();
     }
 }
@@ -30,7 +30,7 @@ class solve {
 	
     public void sol() throws Exception {
     	ModScanner in= new ModScanner();
-    	PrintWriter pw=new PrintWriter(System.out);
+    	PrintWriter pw = new PrintWriter(System.out);
         int t = in.nextInt();
         for(int tc=0;tc<t;tc++){
         	int males=in.nextInt();
@@ -71,6 +71,7 @@ class ModScanner {
 	}
  
 	String nextToken() throws Exception {
+
 		while (st == null || !st.hasMoreElements()) {
 				st = new StringTokenizer(br.readLine());
 			
