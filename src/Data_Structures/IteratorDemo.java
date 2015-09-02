@@ -18,11 +18,16 @@ public class IteratorDemo {
       // Use iterator to display contents of al
       System.out.print("Original contents of al: ");
       Iterator itr = al.iterator();
+      Object element2 = 0;
       while(itr.hasNext()) {
-         Object element = itr.next();
+    	 // System.out.print(element2 + " ");
+    	  Object element = itr.next();
+    	  
+        // element2 = itr.next();
          System.out.print(element + " ");
       }
       System.out.println();
+   /*   
       
 	  // Modify objects being iterated
       ListIterator litr = al.listIterator();
@@ -45,5 +50,6 @@ public class IteratorDemo {
          System.out.print(element + " ");
        }
        System.out.println();
-    }
+    */
+   }
 }
