@@ -1,0 +1,6 @@
+//////////////////////////   Topological Sorting :  ////////////////////////////////////////////////////////
+	1) Topological Sorting can not be used on a graph having cycles in it .
+
+Algorithm : 
+	1) Step 1 : Find a vertex which has no successor . (Call No_Successor() Method For this ).
+	2) Step 2 : Delete this vertex from graph and insert its label at the beggining of the list .  
