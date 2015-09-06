@@ -2,9 +2,11 @@ package Data_Structures;
 
 import java.util.ArrayDeque;
 import java.util.Iterator;
+import java.util.Stack;
  
 public class ArrayDequeTest {
 	public static void main(String... args){
+		Stack<Integer > st = new Stack<Integer>();
 		
 		ArrayDeque<String> aq= new ArrayDeque<String>();
 		aq.add("A");

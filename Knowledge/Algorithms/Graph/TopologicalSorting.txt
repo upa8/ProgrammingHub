@@ -1,6 +1,11 @@
 //////////////////////////   Topological Sorting :  ////////////////////////////////////////////////////////
 	1) Topological Sorting can not be used on a graph having cycles in it .
-
+	2) A graph with no cycles is called as tree. 
+	3) It's easy to detect whether graph will have cycles or not . 
+		If a graph has N vertices and V edges . 
+		If V > N then the graph must have cycle 
+		The graph which do not hace cycle is called as Directed Acyclic graph (DAC).	
 Algorithm : 
 	1) Step 1 : Find a vertex which has no successor . (Call No_Successor() Method For this ).
-	2) Step 2 : Delete this vertex from graph and insert its label at the beggining of the list .  
+	2) Step 2 : Delete this vertex from graph and insert its label at the beggining of the list . 
+	 
