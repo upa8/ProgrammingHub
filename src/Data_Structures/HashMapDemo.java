@@ -21,8 +21,18 @@ public class HashMapDemo {
 	      hm.put(4,4);
 	      hm.put(3,3);
 	      hm.put(5,1);
-	      
-	      
+	       System.out.println(hm.get(5));
+/*
+		     Set set = hm.entrySet();
+		       
+		      Iterator i = set.iterator();
+		      
+		      while(i.hasNext()) {
+		         Map.Entry me = (Map.Entry)i.next();
+		         int a  = (int) me.getValue();
+		         System.out.print(me.getKey() + ": ");
+		         System.out.println(me.getValue());
+		      }
 	      // Get a set of the entries
 	      //Set set = hm.entrySet();
 	      // Get an iterator
@@ -30,6 +40,7 @@ public class HashMapDemo {
 	      // Display elements
 	     // while(i.hasNext()) {
 	       //  Map.Entry me = (Map.Entry)i.next();
+	      
 	       //  System.out.print(me.getKey() + ": ");
 	        // System.out.println(me.getValue());
 	     // }
@@ -59,4 +70,6 @@ public class HashMapDemo {
 	     // System.out.println("Zara's new balance: " +
 	     // hm.get("Zara"));
 	   }
+	   */
 	}
+	   }

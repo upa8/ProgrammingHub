@@ -14,6 +14,9 @@ public class ArrayDequeTest {
 		aq.add("C");
 		
 		
+		
+		
+		
 		//offerFirst-adds elements at the front of the ArrayDeque 
 		aq.offerFirst("D");
 		
