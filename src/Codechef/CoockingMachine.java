@@ -2,6 +2,8 @@ package Codechef;
 
 import java.io.PrintWriter;
 
+import Hackerrank.MyScanner;
+
 public class CoockingMachine extends MyScanner{
 	
 	public static void main(String args[]) throws Exception{

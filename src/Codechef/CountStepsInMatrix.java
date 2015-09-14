@@ -2,6 +2,8 @@ package Codechef;
 
 import java.util.HashMap;
 
+import Hackerrank.MyScanner;
+
 public class CountStepsInMatrix extends MyScanner{
 	public static void main(String args[]) throws Exception{
 			CountStepsInMatrix in  = new CountStepsInMatrix();

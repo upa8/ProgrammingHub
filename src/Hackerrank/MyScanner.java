@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 
-class MyScanner {
+public class MyScanner {
 	BufferedReader br;
 	StringTokenizer st;
  
@@ -15,7 +15,7 @@ class MyScanner {
 	
 	}
  
-	String nextToken() throws Exception {
+	public String nextToken() throws Exception {
 
 		while(st == null || !st.hasMoreElements()) {
 			
@@ -25,15 +25,15 @@ class MyScanner {
 		return st.nextToken();
 	}
  
-	int nextInt() throws Exception, Exception {
+	public int nextInt() throws Exception, Exception {
 		return Integer.parseInt(nextToken());
 	}
  
-	long nextLong() throws Exception {
+	public long nextLong() throws Exception {
 		return Long.parseLong(nextToken());
 	}
  
-	double nextDouble() throws Exception {
+	public double nextDouble() throws Exception {
 		return Double.parseDouble(nextToken());
 	}
 }
