@@ -35,16 +35,20 @@ public class Breadth_First_Search_Shortest_Reach extends MyScanner {
 
 
 	public static void main (String[] args) throws Exception {
+		
 		Breadth_First_Search_Shortest_Reach in = new Breadth_First_Search_Shortest_Reach();
 		int t = in.nextInt();
 		for (int qq = 0; qq < t; qq++) {
 			int n = in.nextInt();
 			int m = in.nextInt();
+			// Adjecency List Representation of graph 
 			ArrayList<ArrayList<Integer>> adj = new ArrayList<ArrayList<Integer>>();
-
+			
 			int[] dist = new int[n];
+			// Creating number of vertices into adjecency list  
 			for (int i = 0; i < n; i++) {
 				adj.add(new ArrayList<Integer>());
+				// Maximum value is given to all the elements of distance array
 				dist[i] = 1 << 29;
 				System.out.println(dist[i] );
 			}
@@ -55,14 +59,18 @@ public class Breadth_First_Search_Shortest_Reach extends MyScanner {
 				adj.get(a).add(b);
 				adj.get(b).add(a);
 			}
+			//End of adding edges into adjecency list here .
 			
+			// Get the source 
 			int s = in.nextInt() - 1;
+			// Create array dequeue for storing the previous results 
 			Queue<Integer> q = new ArrayDeque<Integer>();
 			// distance of source is zero
+			// Now putting distance of source from source as zero
 			dist[s] = 0;
 			// Source is added into the arraydequeue
 			q.offer(s);
-			//
+			//Now as source is added into arraydequeue , we will find all the adjecent elements of the source 
 			while (!q.isEmpty()) {
 				// Retrives the head of the ArrayDequeue
 				Integer curr = q.poll();

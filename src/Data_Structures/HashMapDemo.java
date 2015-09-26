@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
+
 public class HashMapDemo {
 
 	   public static void main(String args[]) {
@@ -21,7 +22,8 @@ public class HashMapDemo {
 	      hm.put(4,4);
 	      hm.put(3,3);
 	      hm.put(5,1);
-	       System.out.println(hm.get(5));
+	      System.out.println(hm.get(5));
+	       
 /*
 		     Set set = hm.entrySet();
 		       
