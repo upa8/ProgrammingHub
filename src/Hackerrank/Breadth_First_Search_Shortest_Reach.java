@@ -1,15 +1,8 @@
 package Hackerrank;
 
-import java.util.LinkedList;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Queue;
-import java.util.Stack;
-
-
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 //Important things about this program 
 /*
@@ -18,49 +11,38 @@ import java.util.regex.*;
 * This program uses adjecency list representation of graph for solving the breadth first search problems 
 * 
 */
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Queue;
-import java.util.StringTokenizer;
 //Important algorithm with efficient approach
 
 public class Breadth_First_Search_Shortest_Reach extends MyScanner {
 
+	public static void main(String[] args) throws Exception {
 
-	public static void main (String[] args) throws Exception {
-		
 		Breadth_First_Search_Shortest_Reach in = new Breadth_First_Search_Shortest_Reach();
 		int t = in.nextInt();
-		for (int qq = 0; qq < t; qq++) {
+		for ( int qq = 0 ; qq < t ; qq++ ) {
 			int n = in.nextInt();
 			int m = in.nextInt();
 			// Adjecency List Representation of graph 
 			ArrayList<ArrayList<Integer>> adj = new ArrayList<ArrayList<Integer>>();
-			
+
 			int[] dist = new int[n];
 			// Creating number of vertices into adjecency list  
-			for (int i = 0; i < n; i++) {
+			for ( int i = 0 ; i < n ; i++ ) {
 				adj.add(new ArrayList<Integer>());
 				// Maximum value is given to all the elements of distance array
+				// Shifting the bits ... 
 				dist[i] = 1 << 29;
-				System.out.println(dist[i] );
+				//	System.out.println(dist[i]);
 			}
 			// this used for adjecency representation of graph 
-			for (int i = 0; i < m; i++) {
+			for ( int i = 0 ; i < m ; i++ ) {
 				int a = in.nextInt() - 1;
 				int b = in.nextInt() - 1;
 				adj.get(a).add(b);
 				adj.get(b).add(a);
 			}
 			//End of adding edges into adjecency list here .
-			
+
 			// Get the source 
 			int s = in.nextInt() - 1;
 			// Create array dequeue for storing the previous results 
@@ -71,28 +53,28 @@ public class Breadth_First_Search_Shortest_Reach extends MyScanner {
 			// Source is added into the arraydequeue
 			q.offer(s);
 			//Now as source is added into arraydequeue , we will find all the adjecent elements of the source 
-			while (!q.isEmpty()) {
+			while ( !q.isEmpty() ) {
 				// Retrives the head of the ArrayDequeue
 				Integer curr = q.poll();
-				
 				// Now search all the adjecent vertices of the vertex curr
-				for (int next : adj.get(curr)) {
+				for ( int next : adj.get(curr) ) {
 					// If there is any vertex . Check whether it is visited or not 
-					if (dist[next] == 1 << 29) {
+					if (dist[next] == (1 << 29)) {
 						// If the vertex is not visited then
 						// find the distance of previous vertex . 
 						// Add 1 to this distance and push that new vertex into dequeue
 						dist[next] = dist[curr] + 1;
 						q.offer(next);
 					}
-					
 				}
 			}
-			
-			for (int i = 0; i < n; i++) {
-				if (i == s)
+
+			for ( int i = 0 ; i < n ; i++ ) {
+				if (i == s) {
 					continue;
-				System.out.print(dist[i] == 1 << 29 ? "-1 " : dist[i] * 6 + " ");
+				}
+				System.out.print(dist[i] == (1 << 29) ? "-1 " : (dist[i] * 6)
+				        + " ");
 			}
 			System.out.println();
 		}
@@ -100,23 +82,6 @@ public class Breadth_First_Search_Shortest_Reach extends MyScanner {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 // Single Source Shortest Path Problem hackerrank bfs shortest reach
