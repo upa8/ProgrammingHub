@@ -50,9 +50,26 @@ Graph Traversal :
 		9) Finding Strongly Connected Components in graph . 
 			(Input graph should be Directed Acylic Graph ) 
 		
-
-
-
+Minimum Spanning Tree : MST
+	1) Kruskal's Algorithm : 
+		This algorithm first sorts all the edges in acending order and 
+		stores this in edge list data structure . 
+		Now , we select the smallest edge and add this is one set , then we 
+		select next edge and check whether it creates a cycle or not using 
+		light weight union find disjoint set , if not then we connect that edge 
+		, this is greedy algorithm . In this way we find the Minimum cost 
+		required to reach all the vertices in a graph . 
+		Complexity of this algorithm is (E log V). 
+			Calculate complexity of this algorithm : 
+			1) Sorting the Edges + Adding each edge * checking cycle using union find disjoint set 
+			
+			Sorting the edges takes (E logE) in edge list data structure . 
+			Adding each edge * cycle checking  = E*1
+			Total is E log E + E = ElogE (Neglecting E ) . 
+			Maximum number of edges will be V^2 . 
+			Hence E log E = E log V^2 = 2* ElogV  = E log V. 
+	2) Prim's Algorithm : 
+	
 
 Algorithms : 
 1) DFS                Done
