@@ -1,5 +1,11 @@
-Graph Theory : 
+Graph Theory :
 
+Graph Representation : 
+	1) Adjacency Matrix 
+	2) Adjacency List 
+	3) Edge List 
+
+ 
 Graph Traversal : 
 	   What can we do by simply traversing the graph : 
 	   
@@ -69,14 +75,58 @@ Minimum Spanning Tree : MST
 			Maximum number of edges will be V^2 . 
 			Hence E log E = E log V^2 = 2* ElogV  = E log V. 
 	2) Prim's Algorithm : 
+		This is simple algorithm which first takes a vertex (Say we want a MST 
+		from a particular vertex) . Now , we mark this vertex as visited and 
+		store all the adjacent vertices into the priority queue with their weights. 
+		Now we select the edge with least value of weight , and connect it to the our vertex . 
+		Now , we again add the adjacent vertex of this newly added vertex into the priority 
+		queue . This time we select the edge and check whether it creates a cycle or not by just
+		checking its flag whether it has been visited before or not . If not then we 
+		add that edge . And repeat the process until we add V-1 edges to our mst . Becasue 
+		every mst will have V-1 edges to it . 
+	3) Applications of this MST 
+		1) Maximum Spanning Tree : 
+			1) Simple use the krushkal algorithm, in this algorithm , instead 
+			of sorting the edge list in increasing order , sort them in decreasing order . 
+		2) Partial 'Minimum' Spanning Tree . 
+			1) Some of the edges are already fixed and necessary , now we have to find the mst
+			assuming that selected edges are necessary . So , first add those edges into 
+			our krushkal algorithm and then apply the algorithm for remainng edges . 
+		3) Minimum Spanning Forest : 
+			1) In this type of problems , we are given the number of 
+			components to be connected to create the minimum spanning tree . So , 
+			run the krushkal algorithm until we reach to the give number of 
+			necessary connected components . 
+		4) Second Best Spanning Tree : 
+			First create a MST using krushkal algorithm , and just skipp to add v-1 edge from 
+			edge list . Select the next minimum weight edge . We will get the second best minimum 
+			spanning tree . 
+		5) Minimax (and Maximin) (Important ... Implement this ) . 
+			Create a minimum spanning tree using kruskal algorithm . Now traverse the 
+			spanning tree for the given vertex i and j . Now calculate the cost . This is 
+			simple problem in which we have to create minimum spanning tree . After that 
+			we have to find the minimum path cost between two vertex i and j . 
+
+Shortest Path : 
+	1) Single Source Shortest Path . 		
+	
+	
+	
+	
+	
+	
+	
+Intermidiate Algorithms which will be used in solving graph problems . 
+	1) Union find disjoint set Algorithm .	
+	
 	
 
 Algorithms : 
 1) DFS                Done
 2) BFS 				  Done
 3) Prim's 
-4) Krushkal 
-5) Dijkshtra's 
+4) Kruskal 
+5) Dijkstra's 
 6) Wornocks 
 7) Painters 
 8) Bellaman Ford's 
@@ -85,3 +135,9 @@ Algorithms :
 11) Edmonds Karp's Algorithm 
 12) Ford Fulkerson 
 13) Maximum Cardinality Bipartitie Matching Algorithm (MCMB) 
+14) Boruvka Algorithm 
+15) Min arborescence Algorithm 
+16) Johnson Algorithm 
+17) Adjacecny Matrix     
+18) Adjacecny  List 
+19) Edge List 
