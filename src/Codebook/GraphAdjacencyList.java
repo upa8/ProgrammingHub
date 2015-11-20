@@ -13,11 +13,11 @@ public class GraphAdjacencyList extends MyScanner {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		GraphAdjacencyList in = new GraphAdjacencyList();
+
 		ArrayList<ArrayList<Edge>> adj = new ArrayList<ArrayList<Edge>>();
 		int n, m;
 		// N will be number of vertices 
 		// m will be number of edges 
-
 		n = in.nextInt();
 		m = in.nextInt();
 		// Now create the adj matrix for N vertices 

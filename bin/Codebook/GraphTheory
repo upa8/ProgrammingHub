@@ -1,0 +1,70 @@
+Graph Theory : 
+
+Graph Traversal : 
+	   What can we do by simply traversing the graph : 
+	   
+		1) DFS (Depth First Search )  
+			This algorithm uses stack . 
+			Time complexity is (V+E).
+			
+			
+		2) BFS (Breadth First Search )
+			This algorithm uses queue .
+			Time complexity is (V+E).
+			We can find the layers using this algorithm . 
+			This algorithm can be useful for breadth first search shortest distance or path , 
+			it will be a greedy algorithm . But this can be useful for finding shortest 
+			distance from a given point to all the points in the graph . 
+			
+		3) Finding Connected Components in a graph . 
+			User dfs , and check wherether all vertices are visited or not , 
+			if any vertex is not visited , then again go for dfs from that 
+			vertex . In this way we will get all the connected components . 
+		4) Flood Fill - Labeling / Coloring the connected components . 
+			This algorithm is used to color the components of the graph . 
+			Connected components will be colored as same . 
+			Now increase the color number for next connected component . 
+			For next connected components we will use that increased color code . 
+			In this way we will cover all the connected components . 
+			We can use dfs to traverse the graph and find the connected components of graph . 
+			Implement this algorithm in java from Competitive Programming by steven and Felix .
+		5) Topological Sorting 
+			1) Make sure that graph is directed acyclic graph 
+			2) There can be many answers of topological sorting , means there can be many 
+				order sequences of topological sorting for a particular graph .
+			3) This algorithm can be useful in many real life applications , like course
+				selection system in universities etc . 
+			4) One application of topological sorting is to find a possible sequence of modules that a University
+				student has to take to fulfill his graduation requirement. Each module has certain pre-requisites
+				to be met. This pre-requisites can be modeled as a DAG. Topological sorting this module prerequisites DAG gives the student a linear list of modules to be taken one after another without
+				violating the pre-requisites constraint.
+			5) This topological sorting is just application of dfs algorithm . 
+		
+		6) Bipartitie Graph Check .
+		
+		
+		7) Graph Edges Property Check using DFS Spanning Tree .
+		
+		8) Finding articulation points and bridges ( in undirected Graph ).
+		
+		9) Finding Strongly Connected Components in graph . 
+			(Input graph should be Directed Acylic Graph ) 
+		
+
+
+
+
+Algorithms : 
+1) DFS                Done
+2) BFS 				  Done
+3) Prim's 
+4) Krushkal 
+5) Dijkshtra's 
+6) Wornocks 
+7) Painters 
+8) Bellaman Ford's 
+9) Floyd Warshal Algorithm 
+10) Robort Endre Tarjan's Algorithm (Modified dfs for topological sorting )  
+11) Edmonds Karp's Algorithm 
+12) Ford Fulkerson 
+13) Maximum Cardinality Bipartitie Matching Algorithm (MCMB) 
