@@ -109,11 +109,51 @@ Minimum Spanning Tree : MST
 
 Shortest Path : 
 	1) Single Source Shortest Path . 		
+		Given a graph and we have to find shortest path to the all the 
+		vertices of the graph from the given source . There are many 
+		efficient algorithms for solving this type of problems . 
+		If the graph is un-weighted then we can make one assumption that 
+		distance between any two vertices is 1 unit . For this type of un-weighted 
+		graph we can use simple and efficient algorithm which is "Breadth First 
+		Search " . I has time complexity of (V + E ) . 
+		Now , let's suppose the graph is weighted graph . We can use Dijkstra's algorithm 
+		for this weighted graph which has complexity of (v+ e log v).  But this Dijkstra's 
+		algorithm does not work correctly with the graph having negative edges . So , 
+		for that purpose we have bellman ford's algorithm whose complexity is (V*E) . 
 	
+	2) Single source shortest path on unweighted graph . 
+		This is simple variant of BFS algorithm .  
+		Possible variants include: BFS on implicit graph (2D grid: UVa 10653 or 3-D grid: UVa 532), BFS with the
+		printing of the actual shortest path (UVa 11049), BFS on graph with some blocked vertices (UVa
+		10977), BFS from multi-sources (UVa 11101), BFS with single destination – solved by reversing
+		the role of source and destination (UVa 11513), BFS with non-trivial states (UVa 321, 10150), etc.
+		We can also run BFS from more than one source. We call this variant the
+		Multi-Sources Shortest Paths (MSSP) on unweighted graph problem. Try solving UVa 11101 and
+		11624 to get the idea of MSSP on unweighted graph. A naive solution is to call BFS multiple times.
+		If there are k possible sources, such solution will run inO(k×(V+E)).
+		
+		
+	3) Varients of single source shortest path are 
+		1) Single Pair shortest path (SPSP) 
+			Both Source and destination are given . 
+		2) Single destination shortest path . 
+			It is our usual single source shortest path algorithm , we are just changing 
+			the source with the destination , remaining implementation is same . 
+			Naive approach is to do single source shortest path from a given vertex 
+			and then just reverse path because the given source is actually a destination . 
+		
+	4) Single Source Shortest Path On Weighted Graph . 
 	
+		
+		
+	5) All Pair Shortest Path Algorithm . 
 	
+Maximum Flow Algorithms .
+	1) Ford Fulkerson's Method 
+	2) Edmonds Karp's Method 
+	3) Varients 
 	
-	
+Special Graph  
 	
 	
 Intermidiate Algorithms which will be used in solving graph problems . 
@@ -121,23 +161,30 @@ Intermidiate Algorithms which will be used in solving graph problems .
 	
 	
 
-Algorithms : 
-1) DFS                Done
-2) BFS 				  Done
-3) Prim's 
-4) Kruskal 
-5) Dijkstra's 
-6) Wornocks 
-7) Painters 
+Algorithms : 																							Reading            Implementation 
+1) DFS                																					Done				
+2) BFS 				  																					Done
+3) Prim's             																					Done 
+4) Kruskal 			  																					Done 
+5) Dijkstra's 																							Done
+6) Wornocks 																					
+7) Painters 																					
 8) Bellaman Ford's 
 9) Floyd Warshal Algorithm 
 10) Robort Endre Tarjan's Algorithm (Modified dfs for topological sorting )  
 11) Edmonds Karp's Algorithm 
-12) Ford Fulkerson 
+12) Ford Fulkerson  Method 
 13) Maximum Cardinality Bipartitie Matching Algorithm (MCMB) 
 14) Boruvka Algorithm 
 15) Min arborescence Algorithm 
 16) Johnson Algorithm 
-17) Adjacecny Matrix     
-18) Adjacecny  List 
-19) Edge List 
+17) Adjacency Matrix     																				Done
+18) Adjacency  List 																					Done
+19) Edge List 																							Done
+20) k-th shortest paths
+21) Bitonic Traveling Salesman
+22) Problem,Chu Liu Edmonds algorithmfor Min Cost Arborescence problem 
+23) Tarjan’s Offline Lowest Common Ancestoralgorithm
+24) Hopcroft Karp’s algorithm 
+25  Kuhn Munkres’s Hungarian algorithm 
+26) Edmonds’s Blossom Shrinking algorithm
