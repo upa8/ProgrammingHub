@@ -1,4 +1,57 @@
 Tree Theory : 
 
-1) Tree Traversal Algorithms 
+Binary Tree : 
+	1) Strict Binary Tree
+		If every node has either two or zero child . 
+		 
+	2) Full Binary Tree
+		If every leaf node has exactly two child 
+		 
+	3) Complete Binary Tree
+		If all leaf nodes are at height H or H-1
 
+1) Tree Traversal Algorithms 
+	1) InOrder 
+		
+		Iterative :
+		
+		Recursive :
+		 
+	2) PreOrder
+		
+		Iterative :
+		 
+		Recursive :
+		 
+	3) PostOrder
+		
+		Iterative :
+		 
+		Recursive :
+		
+	4) Level Order
+		
+		Iterative :
+		 
+		Recursive :
+		  
+2) Binary Search Tree 
+
+3) Segment Tree 
+4) Fenwik Tree 
+5) Red Black Tree
+6) Splay Tree
+7) Persistent Tree
+8) AVL Tree
+9) Trie 
+10) Suffix Array 
+11) Prefix Array 
+12) QuadTree
+13) Binary Heap 
+14) 
+
+
+
+Questions On Tree : 
+1) Height Of Tree : 
+2) Depth Of Tree : 
