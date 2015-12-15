@@ -143,10 +143,22 @@ Shortest Path :
 			and then just reverse path because the given source is actually a destination . 
 		
 	4) Single Source Shortest Path On Weighted Graph . 
-	
+		1) Dijkstra's Algorithm on weighted graph is a greedy algorithm used for finding 
+		shortest path from a particular source to the all the other remaining sources . 
+		This can be implemented easily with priority queue with complexy of (E log v). 
+		It can also be implemented using Binary Heap , where we need to use important 
+		property of heapDecreaseKey() . This priority queue implementation 
+		use the inbuild data structure of java , which makes it easy to implement but this
+		allows to add duplicate vertices in the priority queueu . If we try to implement this 
+		Dijkstra's algorithm on a graph with negative edge then it may lead to infinite loop . 
+		
+		2) Bellaman Ford's Algorithm : 
+		
+		3) Shortest Path Faster Algorithm :   
 		
 		
 	5) All Pair Shortest Path Algorithm . 
+	
 	
 Maximum Flow Algorithms .
 	1) Ford Fulkerson's Method 

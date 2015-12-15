@@ -28,9 +28,9 @@ public class StringManipulation {
 
 		//	System.out.println(noOfLetters);
 		//	System.out.println(noOfUniqueCharacters);
-		for ( int i = 0 ; i < lengthOfB ; i++ ) {
-			uniqueArray[b.charAt(i)] -= 1;
-		}
+		//	for ( int i = 0 ; i < lengthOfB ; i++ ) {
+		//		uniqueArray[b.charAt(i)] -= 1;
+		//	}
 		//	System.out.println(noOfLetters);
 		//	System.out.println(noOfUniqueCharacters);
 		for ( int i = 0 ; i < 256 ; i++ ) {
