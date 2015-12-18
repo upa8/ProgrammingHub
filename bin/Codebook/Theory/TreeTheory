@@ -9,6 +9,17 @@ Binary Tree :
 		 
 	3) Complete Binary Tree
 		If all leaf nodes are at height H or H-1
+		
+    *******Properties Of Binary Tree*********
+    1) In full binary tree , if h is the height of tree then ((2^h+1)-1) is the number
+     of nodes in that tree . 
+    2) In complete binary tree , 
+    	1) Minimum number of nodes are 2^h
+    	2) Maximum number of nodes are ((2^h+1)-1)
+    3) Number of leaf nodes in full binary tree are 2^h
+    4) Number of Null Links (Wasted Pointers) in complete binary tree of 
+    	n nodes is n+1
+    5) 
 
 1) Tree Traversal Algorithms 
 	1) InOrder 
