@@ -1,0 +1,66 @@
+							QUEUE
+                                                        *****
+
+Queue is a linear list of elements in deletion of an elements can take place only at one end called the 
+'front' and insertion can take place only at the other end called the 'rear' .
+Queues are called FIFO lists.
+Example - queue of task waiting for printer , queue in keyboard key press.
+
+-----------------------------------------------------------------------------------------------------------------
+ADT
+---
+1. Initialize a queue to be empty.
+2. Determine if a queue is empty or not.
+3. Determine if a queue is full or not.
+4. Insert a new element after  the last element in the queue, if not full.
+5. Retrieve the first element of a queue , if not empty.
+6. Delete the first element in a queue , if not empty.
+
+-----------------------------------------------------------------------------------------------------------------
+
+Representation as an ARRAY
+-------------------------
+      Q[0]   Q[1]  Q[2]  Q[3]  Q[4]  Q[5]  Q[6]  Q[7] 
+     |Item1|Item3|Item3|Item4|     |     |     |     | 
+                        REAR=3
+     FRONT=0
+
+Representation as Linked List
+-----------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+CIRCULAR QUEUE
+--------------
+Circular queues are implemented in circular form. 
+->It overcomes the problem of untilised space as in linear implementation.
+
+-> Conditions in array implementation:-
+ |   1. Empty         | 2. Full                      | 3. Insert                   | 4. Deletion                      |
+ |      Front=Rear=-1 |    Front=(Rear+1)%QUEUE_SIZE |    Rear=(Rear+1)%QUEUE_SIZE |    Front =( Front +1)%QUEUE_SIZE |
+   
+-----------------------------------------------------------------------------------------------------------------------    
+    
+DOUBLE ENDED QUEUES - DEQUES
+----------------------------
+
+A deque is a linear list in which elements can be added or removed at either end ( front or rear) but not int the middle.
+
+-----------------------------------------------------------------------------------------------------------------------    
+
+PRIORITY QUEUES
+---------------
+
+In priority queue each element is assigned a priority and the order in which elements are deleted and processed is 
+determined from the following rules :
+  * An element of higher priority is processed before any element of lower priority .
+  * Two elements with the same priority are processed according to the order in which they are added 
+    to the queue.
+Example : In a time sharing system programs of higher priority are processed first .
+
+ARRAY IMPLEMENTATION
+--------------------
+
+ 
+  
