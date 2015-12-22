@@ -1,62 +1,104 @@
 package Scratch.Trees;
 
-/* Class containing left and right child of current
-node and key value*/
-class Node {
-	int	key;
-	Node	left, right;
+/**
+ * 
+ * Youtube link - https://youtu.be/bmaeYtlO2OE .
+ * Youtube link - https://youtu.be/_SiwrPXG9-g . 
+ * Youtube link - https://youtu.be/NA8B84DZYSA .
+ * 
+ */
+class NodeRef {
+	Node	node;
+}
 
-	public Node(int item) {
-		this.key = item;
-		this.left = this.right = null;
+enum Color {
+	RED, BLACK
+}
+
+class Node {
+	Node	left;
+	Node	right;
+	Node	next;
+	int	  data;
+	int	  lis;
+	int	  height;
+	int	  size;
+	Color	color;
+
+	public static Node newNode(int data) {
+		Node n = new Node();
+		n.left = null;
+		n.right = null;
+		n.data = data;
+		n.lis = -1;
+		n.height = 1;
+		n.size = 1;
+		n.color = Color.RED;
+		return n;
 	}
 }
 
-//A Java program to introduce Binary Tree
-class BinaryTree {
-	// Root of Binary Tree
-	Node	root;
+public class BinaryTree {
 
-	// Constructors
-	BinaryTree(int key) {
-		this.root = new Node(key);
+	public Node addNode(int data, Node head) {
+		Node tempHead = head;
+		Node n = Node.newNode(data);
+		if (head == null) {
+			head = n;
+			return head;
+		}
+		Node prev = null;
+		while ( head != null ) {
+			prev = head;
+			if (head.data < data) {
+				head = head.right;
+			} else {
+				head = head.left;
+			}
+		}
+		if (prev.data < data) {
+			prev.right = n;
+		} else {
+			prev.left = n;
+		}
+		return tempHead;
 	}
 
-	BinaryTree() {
-		this.root = null;
+	class IntegerRef {
+		int	height;
 	}
 
-	public static void main(String[] args) {
-		BinaryTree tree = new BinaryTree();
+	public int height(Node root) {
+		if (root == null) {
+			return 0;
+		}
+		int leftHeight = this.height(root.left);
+		int rightHeight = this.height(root.right);
+		return Math.max(leftHeight, rightHeight) + 1;
+	}
 
-		/*create root*/
-		tree.root = new Node(1);
+	public int size(Node root) {
+		if (root == null) {
+			return 0;
+		}
+		int leftSize = this.size(root.left);
+		int rightSize = this.size(root.right);
+		return (leftSize + rightSize + 1);
+	}
 
-		/* following is the tree after above statement
+	public static void main(String args[]) {
+		BinaryTree bt = new BinaryTree();
+		Node head = null;
+		head = bt.addNode(10, head);
+		head = bt.addNode(15, head);
+		head = bt.addNode(5, head);
+		head = bt.addNode(7, head);
+		head = bt.addNode(19, head);
+		head = bt.addNode(20, head);
+		head = bt.addNode(-1, head);
+		head = bt.addNode(21, head);
+		System.out.println(bt.height(head));
+		System.out.println(bt.size(head));
 
-		      1
-		    /   \
-		  null  null     */
-
-		tree.root.left = new Node(2);
-		tree.root.right = new Node(3);
-
-		/* 2 and 3 become left and right children of 1
-		       1
-		     /   \
-		    2      3
-		  /    \    /  \
-		null null null null  */
-
-		tree.root.left.left = new Node(4);
-		/* 4 becomes left child of 2
-		            1
-		        /       \
-		       2          3
-		     /   \       /  \
-		    4    null  null  null
-		   /   \
-		  null null
-		 */
 	}
 }

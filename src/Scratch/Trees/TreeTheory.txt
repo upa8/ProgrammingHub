@@ -38,7 +38,8 @@ Binary Tree :
 			 
 	***************************************************************
 	********************Applications of Tree Data Structure *******
-		
+		1) Hierarchy 
+		2) Router algorithms 
 	***************************************************************
 	
 	
@@ -78,6 +79,9 @@ Binary Tree :
 		Iterative :
 		 
 		Recursive :
+	5) 
+	
+	
 		  
 2) Binary Search Tree 
 
@@ -96,6 +100,137 @@ Binary Tree :
 
 
 
-Questions On Tree : 
+Solutions to most Popular Questions  On Tree : 
 1) Height Of Tree : 
-2) Depth Of Tree : 
+	Online Source : 
+		https://www.youtube.com/watch?v=ZM-sV9zQPEs&index=22&list=PLrmLmBdmIlpv_jNDXtJGYTPNQ2L1gdHxu&ab_channel=TusharRoy
+		
+	Solution in short : 
+		public int height(Node root) {
+				if (root == null) {
+					return 0;
+				}
+				int leftHeight = this.height(root.left);
+				int rightHeight = this.height(root.right);
+				return Math.max(leftHeight, rightHeight) + 1;
+		}
+		
+2) Size of tree  : 
+		public int size(Node root) {
+				if (root == null) {
+					return 0;
+				}
+				int leftSize = this.size(root.left);
+				int rightSize = this.size(root.right);
+				return (leftSize, leftSize + 1);
+		}
+		Size of tree means total number trees present in the tree. 
+3) Binary Tree Insertion : 
+		
+		
+		public Node addNode(int data, Node head) {
+				Node tempHead = head;
+				Node n = Node.newNode(data);
+				if (head == null) {
+					head = n;
+					return head;
+				}
+				Node prev = null;
+				while ( head != null ) {
+					prev = head;
+					if (head.data < data) {
+						head = head.right;
+					} else {
+						head = head.left;
+					}
+				}
+				if (prev.data < data) {
+					prev.right = n;
+				} else {
+					prev.left = n;
+				}
+				return tempHead;
+			}
+		
+	
+
+		Time complexity : 
+			worst case : o(n)
+			
+		
+
+4) Binary Search Algorithm : 
+		 public Node search(Node root, int key){
+		        if(root == null){
+		            return null;
+		        }
+		        if(root.data == key){
+		            return root;
+		        }else if(root.data < key){
+		            return search(root.right, key);
+		        }else{
+		            return search(root.left, key);
+		        }
+    	}
+    	
+    	 * Youtube link - https://youtu.be/zm83jPHZ-jA
+  
+		  Given a binary search tree and a key, return node which has data as this key or return
+		  null if no node has data as key.
+		  
+		  Solution 
+		  Since its BST for every node check if root.data is key and if not go either left or
+		  right depending on if root.data is greater or less than key
+		  
+		  Time complexity is O(n) for non balanced BST
+		  Time complexity is O(logn) for balanced BST
+  
+	  Test cases:
+	  1) null tree
+	  2) Tree with one node and key is that node
+	  3) Tree with many nodes and key does not exist
+	  4) Tree with many nodes and key exists
+	  
+5) Root to leaf Sum Binary Tree : 
+		Online Resource : 
+		https://www.youtube.com/watch?v=Jg4E4KZstFE&list=PLrmLmBdmIlpv_jNDXtJGYTPNQ2L1gdHxu&index=17&ab_channel=TusharRoy
+		
+		public boolean printPath(Node root, int sum, List<Node> path){
+	        if(root == null){
+	            return false;
+	        }
+	
+	        if(root.left == null && root.right == null){
+	            if(root.data == sum){
+	                path.add(root);
+	                return true;
+	            }else{
+	                return false;
+	            }
+	        }
+	        if(printPath(root.left, sum-root.data, path) || printPath(root.right, sum - root.data, path)){
+	            path.add(root);
+	            return true;
+	        }
+	        return false;
+	    }
+6)	Is Binary Tree a Binary Search Tree . 
+		
+
+
+
+
+
+To Do List : 
+1) Write all proper output for TreeTraversals 
+2) Program for Diameter of Binary Tree
+3) Level Order Traversal 
+4) Level Order Traversal In Reverse
+5) Boundary Traversal 
+6) Find Maximum element in Binary Tree with and without recursion . 
+7) Give an algorithm for searching an element in Binary Tree with and without recursion 
+8) Algorithm to find size of binary tree with and without recursion 
+9) Algorithm to delete the tree .
+10) Algorithm to find depth and height of tree. 
+
+
