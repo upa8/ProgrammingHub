@@ -215,8 +215,35 @@ Solutions to most Popular Questions  On Tree :
 	        return false;
 	    }
 6)	Is Binary Tree a Binary Search Tree . 
-		
+		Online Resources: 
+		https://www.youtube.com/watch?v=MILxfAbIhrE&list=PLrmLmBdmIlpv_jNDXtJGYTPNQ2L1gdHxu&index=16&ab_channel=TusharRoy
 
+		    public boolean isBST(Node root){
+     			   return isBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    		}
+    
+		    private boolean isBST(Node root, int min, int max){
+		        if(root == null){
+		            return true;
+		        }
+		        if(root.data <= min || root.data > max){
+		            return false;
+		        }
+		        return isBST(root.left, min, root.data) && isBST(root.right, root.data, max);
+		    }
+		    
+	There are four methods to solve this problem 
+	Geeksforgeeks Link
+	http://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
+	
+	Best approach is , do in-order traversal of the tree , Check whether the sequence found in 
+	this traversal is in ascending order or not . No need to store this sequence in 
+	an array , just store the previous value and compare it with current value . 
+	If current value is greater than previous value then go forward , 
+	otherwise return false . 
+	
+	
+7) 
 
 
 
