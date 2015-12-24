@@ -4,24 +4,20 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 /**
- * Date 04/11/2015
- * @author tusroy
+ *
  * 
  * Youtube link - https://youtu.be/MILxfAbIhrE
- * 
- * Given a binary tree, return true if it is binary search tree else return false.
- * 
- * Solution
- * Keep min, max for every recursion. Initial min and max is very small and very larger
- * number. Check if root.data is in this range. When you go left pass min and root.data and 
- * for right pass root.data and max.
- * 
+ *
+ * Given a binary tree, return true if it is binary search tree else return
+ * false.
+ *
+ * Solution Keep min, max for every recursion. Initial min and max is very small
+ * and very larger number. Check if root.data is in this range. When you go left
+ * pass min and root.data and for right pass root.data and max.
+ *
  * Time complexity is O(n) since we are looking at all nodes.
- * 
- * Test cases:
- * Null tree
- * 1 or 2 nodes tree
- * Binary tree which is actually BST
+ *
+ * Test cases: Null tree 1 or 2 nodes tree Binary tree which is actually BST
  * Binary tree which is not a BST
  */
 public class IsBST {
@@ -38,7 +34,7 @@ public class IsBST {
 			return false;
 		}
 		return this.isBST(root.left, min, root.data)
-		        && this.isBST(root.right, root.data, max);
+				&& this.isBST(root.right, root.data, max);
 	}
 
 	public boolean isBSTIterative(Node root) {
@@ -49,7 +45,7 @@ public class IsBST {
 		Node node = root;
 		int prev = node.data;
 		int current = 0;
-		while ( true ) {
+		while (true) {
 			if (node != null) {
 				stack.addFirst(node);
 				node = node.left;
