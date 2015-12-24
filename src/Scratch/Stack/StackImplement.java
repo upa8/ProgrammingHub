@@ -1,3 +1,4 @@
+package Scratch.Stack;
 /*
  * Java Program to Implement Stack
    Reference = http://www.sanfoundry.com/java-program-implement-stack/

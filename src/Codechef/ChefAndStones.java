@@ -3,7 +3,7 @@ package Codechef;
 /*
  * Author : Pratik Upacharya
  * Question : https://www.codechef.com/DEC15/problems/CHEFST
- *
+ * Editorial : https://discuss.codechef.com/questions/77629/chefst-editorial
  * Solutions :
  *
  * Solution 1:
@@ -15,6 +15,9 @@ package Codechef;
  *	If minimum of n1 and n2 is not greater than checkSum then go to else logic.
  *
  *Solution 2 :
+ *	Editorial :
+ *	https://discuss.codechef.com/questions/77629/chefst-editorial
+ *
  *
  */
 public class ChefAndStones extends MyScanner {
