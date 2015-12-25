@@ -43,6 +43,8 @@ Solutions To Most Polular Questions On Tree :
 4) Binary Search Algorithm .
 5) Root to leaf Sum .
 6) Is a Binary Tree or Binary Search Tree .  
+7) Largest BST in Binary Tree 
+Complexity Chart 
 -------------------------------------------------------------------------------
 					1)	Binary Tree  
 					****************
@@ -134,8 +136,34 @@ Solutions To Most Polular Questions On Tree :
 -------------------------------------------------------------------------------		  
 				3) Binary Search Tree
 				********************* 
+	Operations : 
+		1) Creation of Binary Search Tree 
+		2) Insertion into Binary Search Tree
+		3) Deletion from Binary Search Tree
+		4) Searching from Binary Search Tree 
+		
+	Time Complexities : 
+	1) Insertion : 
+		In average case o(log n) . In worst case 0(n^2) . 
+	2) Search : 
+		In average case o(log n) . In worst case 0(n^2) .
+	3) Deletion : 
+	
+	4) Creation : 
+		If there are n elements , if we do not know element before hand then 
+		we will have to do 'n' insertions to create the tree . 
+		If we already know the elements , then an efficient approach is to 
+		sort this elements in  nlogn  . Select middle element as a root . 
+		And then insert element from left and right to create Binary 
+		Search Tree . It will have advantage like , balanced tree . 
+		This approach will improve performance of searching in tree as 
+		the tree is balanced so height will be minimum here . 
+		In average case 0(nlog n) . In worst case 0( n^2 ) .
+		
+	  
 -------------------------------------------------------------------------------
-4) Segment Tree :
+				4) Segment Tree :
+-------------------------------------------------------------------------------
 	Online Resource : 
 	https://www.youtube.com/watch?v=ZBHKZF5w4YU&list=PLrmLmBdmIlpv_jNDXtJGYTPNQ
 	2L1gdHxu&index=8&ab_channel=TusharRoy
@@ -147,9 +175,19 @@ Solutions To Most Polular Questions On Tree :
 	3) Left child  2 * i + 1
 	   Right child 2 * i + 2
 	   Parent      (i - 1)/2
+	4) Lazy Propogation in segment tree . 
+		Video : 
+		https://www.youtube.com/watch?v=xuoQdt5pHj0&list=PLrmLmBdmIlpv_jNDXtJGY
+		TPNQ2L1gdHxu&index=3&ab_channel=TusharRoy
+		
+		It is technique which is used to update segment tree in more optimized 
+		way . 
 
-
-5) Fenwik Tree 
+5) Fenwik Tree : 
+	Video : 
+	https://www.youtube.com/watch?v=CWDQJGaN1gY&ab_channel=TusharRoy
+	
+	
 
 6) Red Black Tree
 
@@ -158,8 +196,37 @@ Solutions To Most Polular Questions On Tree :
 8) Persistent Tree
 
 9) AVL Tree
+	Video : https://www.youtube.com/watch?v=rbg7Qf8GkQ4&list=PLrmLmBdmIlpv_
+	jNDXtJGYTPNQ2L1gdHxu&index=7&ab_channel=TusharRoy
+	
+	
 	It is a binary search tree in which difference between height of left 
-	subtree and right subtree is less than 1 . 
+	subtree and right subtree is less than 1 . This is balanced binary search
+	tree .
+	
+	Every insertion operation in AVL tree takes logn time . So to create an 
+	AVL tree from an array of elements n will take nlogn time . Also rotations 
+	in AVL tree are of o(1) . 
+	
+	Refference to this : 
+	http://stackoverflow.com/questions/17629668/difference-between-the-time-
+	complexity-required-to-build-binary-search-tree-and
+	
+	
+	AVL Tree Insertion : 
+		There are four cases of this 
+			1) LEFT LEFT 
+			2) LEFT RIGHT 
+			3) RIGHT LEFT 
+			4) RIGHT RIGHT 
+	AVL Tree Deletion :  
+	
+	
+	Time Complexities : 
+		1) Insertion : O(log n)
+		2) Deletion : O(log n) 
+		3) Search : O(log n) 
+	 
 	
 10) Trie 
 
@@ -351,6 +418,11 @@ Solutions to most Popular Questions  On Tree :
 	value and compare it with current value . If current value is greater
 	than previous value then go forward , otherwise return false . 
 	
+7) Largest Binary Search Tree in Binary Tree 
+	Video : 
+		https://www.youtube.com/watch?v=4fiDs7CCxkc&index=4&list=PLrmLmBdmIlpv_
+		jNDXtJGYTPNQ2L1gdHxu&ab_channel=TusharRoy 
+		
 	
 
 To Do List : 
@@ -371,3 +443,10 @@ Currently Working on
 2) AVL Tree 
 3) Red Black Tree
 4) Fenweek Tree 
+
+
+Complexity Chart 
+-------------------------------------------------------------------------------
+Tree             Insertion  Deletion  Search  Creation  
+
+
