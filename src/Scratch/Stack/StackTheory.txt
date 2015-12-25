@@ -37,3 +37,23 @@ APPLICATIONS
 2. INFIX TO POSTFIX.
 3. EVALUATION OF POSTFIX.
 4. RECURSION.
+-------------------------------------------------------------------------------
+Implementation 
+--------------
+There are two ways to implement stacks 
+1) Using Arrays 
+	Pros: Easy to implement . Memory is saved as pointers are not involved  
+	Cons: It is not dynamic . It does not grow or shrink at runtime 
+2) Using LinkedList
+	Pros: It is dynamic , can grow or shrink at runtime.
+	Cons:  Requires extra memory 
+
+-------------------------------------------------------------------------------
+	Questions On Stack : 
+	1) Maximum Rectangular Area in Histogram .
+	   Question : http://www.geeksforgeeks.org/largest-rectangle-under-histogram/ 
+	   Video : 
+		https://www.youtube.com/watch?v=ZmnqCZp9bBs&list=PLrmLmBdmIlptv-uwAgP8k
+		5pGdlHedncq1&index=1&ab_channel=TusharRoy
+	
+	2) 

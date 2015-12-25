@@ -1,9 +1,52 @@
-				****** TREEE THEORY *******
+				****** TREEE Notes *******
+Index :
+ 
+1) Binary Tree :
+	1.1) Types of Binary Tree 
+	1.2) Enumeration of binary tree 
+	1.3) Applications of Tree data structure 
+	1.4) Properties of binary tree  
+2) Tree Traversal Algorithms 
+	2.1) In-order 
+	2.2) Pre-Order
+	2.3) Post-Order
+	2.4) Level-Order
+	2.5) Spiral- Order 
+3) Binary Search Tree 
+4) Segment Tree 
+5) Fenwik Tree 
 
-------------------------------------------------------------------------------------------
-Binary Tree : 
+6) Red Black Tree
+
+7) Splay Tree
+
+8) Persistent Tree
+
+9) AVL Tree
+	It is a binary search tree in which difference between height of left 
+	subtree and right subtree is less than 1 . 
 	
-	********************Types of binary tree ********************** 
+10) Trie 
+
+11) Suffix Array 
+
+12) Prefix Array 
+
+13) QuadTree
+
+14) Binary Heap 
+
+Solutions To Most Polular Questions On Tree : 
+1) Heigth Of Binary Tree .
+2) Size  of  Binary Tree  .
+3) Binary Tree Insertion .
+4) Binary Search Algorithm .
+5) Root to leaf Sum .
+6) Is a Binary Tree or Binary Search Tree .  
+-------------------------------------------------------------------------------
+					1)	Binary Tree  
+					****************
+	1.1) Types of binary tree 
 ------------------------------------------------------------------------------------------
 	Online Resource : 
 		http://geeksquiz.com/binary-tree-set-3-types-of-binary-tree/
@@ -14,96 +57,131 @@ Binary Tree :
 		If every leaf node has exactly two children or 0 children 
 	3) Complete Binary Tree
 		If all leaf nodes are at height H or H-1
-		A Binary Tree is complete Binary Tree if all levels are completely filled 
-		except possibly the last level and the last level has all keys as left as possible
+		A Binary Tree is complete Binary Tree if all levels are completely 
+		filled except possibly the last level and the last level has all 
+		keys as left as possible
 	4) Balance Binary Tree: 
-		A binary tree is balanced if height of the tree is O(Log n) where n is number 
-		of nodes. For Example, AVL tree maintain O(Log n) height by making sure that 
-		the difference between heights of left and right subtrees is 1. 
-		Red-Black trees maintain O(Log n) height by making sure that the number 
-		of Black nodes on every root to leaf paths are same and there are no 
-		adjacent red nodes. Balanced Binary Search trees are performance wise 
-		good as they provide O(log n) time for search, insert and delete .
+		A binary tree is balanced if height of the tree is O(Log n) where n 
+		is number of nodes. For Example, AVL tree maintain O(Log n) height 
+		by making sure that the difference between heights of left and right 
+		subtrees is 1. Red-Black trees maintain O(Log n) height by making sure
+		that the number of Black nodes on every root to leaf paths are same
+        and there are no adjacent red nodes. Balanced Binary Search trees
+        are performance wise good as they provide O(log n) time for search, 
+        insert and delete .
 	5) Degenerated Tree : 
-		A tree where every internal node has only 1 child , such trees are performance 
-		wise same as linked list .	
-	***************************************************************
-	**************Enumeration Of Binary Trees**********************
+		A tree where every internal node has only 1 child , such trees are 
+		performance wise same as linked list .	
+-------------------------------------------------------------------------------
+	1.2) Enumeration Of Binary Trees
 		1) How many different unlabeled tree can be there with n node . 
 			T(n) = (2n)!/(n+1)!*n!
 			This is called as catalan number . 
-			Number of binary trees with n node is also same as that unlabeled trees.
+			Number of binary trees with n node is also same as that unlabeled 
+			trees.
 		2) How many different labeled tree can be there with n nodes. 
 			T(n) = T(n) = ((2n)!/(n+1)!*n!)*n!
-			 
-	***************************************************************
-	********************Applications of Tree Data Structure *******
+-------------------------------------------------------------------------------			 
+	1.3) Applications of Tree Data Structure
 		1) Hierarchy 
 		2) Router algorithms 
-	***************************************************************
+-------------------------------------------------------------------------------
 	
-	
-    *******Properties Of Binary Tree*********
-    1) In full binary tree , if h is the height of tree then ((2^h+1)-1) is the number
-     of nodes in that tree . 
+    1.4) Properties Of Binary Tree
+    
+    1) In full binary tree , if h is the height of tree then ((2^h+1)-1) is the
+     	number of nodes in that tree . 
     2) In complete binary tree , 
     	1) Minimum number of nodes are 2^h
     	2) Maximum number of nodes are ((2^h+1)-1)
     3) Number of leaf nodes in full binary tree are 2^h
     4) Number of Null Links (Wasted Pointers) in complete binary tree of 
     	n nodes is n+1
-    5) 
 
+-------------------------------------------------------------------------------
+			2) Tree Traversal Algorithms 
+			****************************
 
-1) Tree Traversal Algorithms 
-	1) InOrder 
+	2.1) InOrder 
 		
 		Iterative :
 		
 		Recursive :
 		 
-	2) PreOrder
+	2.2) PreOrder
 		
 		Iterative :
 		 
 		Recursive :
 		 
-	3) PostOrder
+	2.3) PostOrder
 		
 		Iterative :
 		 
 		Recursive :
 		
-	4) Level Order
+	2.4) Level Order
 		
 		Iterative :
 		 
 		Recursive :
-	5) 
+	2.5) Spiral Order : 
+		Iterative : 
+		
+		Recursive :  
 	
 	
-		  
-2) Binary Search Tree 
+-------------------------------------------------------------------------------		  
+				3) Binary Search Tree
+				********************* 
+-------------------------------------------------------------------------------
+4) Segment Tree :
+	Online Resource : 
+	https://www.youtube.com/watch?v=ZBHKZF5w4YU&list=PLrmLmBdmIlpv_jNDXtJGYTPNQ
+	2L1gdHxu&index=8&ab_channel=TusharRoy
+	1)If array size is power of 2 , then size of segment tree will be
+	arraylength*2 -1. 
+	2) If array size is not power of 2 , then we find next power of two ,
+	greater than the number and do the same 
+	newPowerOfTwo * 2 -1 
+	3) Left child  2 * i + 1
+	   Right child 2 * i + 2
+	   Parent      (i - 1)/2
 
-3) Segment Tree 
-4) Fenwik Tree 
-5) Red Black Tree
-6) Splay Tree
-7) Persistent Tree
-8) AVL Tree
-9) Trie 
-10) Suffix Array 
-11) Prefix Array 
-12) QuadTree
-13) Binary Heap 
-14) 
+
+5) Fenwik Tree 
+
+6) Red Black Tree
+
+7) Splay Tree
+
+8) Persistent Tree
+
+9) AVL Tree
+	It is a binary search tree in which difference between height of left 
+	subtree and right subtree is less than 1 . 
+	
+10) Trie 
+
+11) Suffix Array 
+
+12) Prefix Array 
+
+13) QuadTree
+
+14) Binary Heap 
 
 
 
+
+
+-------------------------------------------------------------------------------
 Solutions to most Popular Questions  On Tree : 
-1) Height Of Tree : 
+
+1) Height Of  Binary Tree : 
 	Online Source : 
-		https://www.youtube.com/watch?v=ZM-sV9zQPEs&index=22&list=PLrmLmBdmIlpv_jNDXtJGYTPNQ2L1gdHxu&ab_channel=TusharRoy
+		https://www.youtube.com/watch?v=ZM-sV9zQPEs&index=22&list=PLrmLmBdmIlp
+		v_jNDXtJGYTPNQ2L1gdHxu&ab_channel=TusharRoy
 		
 	Solution in short : 
 		public int height(Node root) {
@@ -115,7 +193,7 @@ Solutions to most Popular Questions  On Tree :
 				return Math.max(leftHeight, rightHeight) + 1;
 		}
 		
-2) Size of tree  : 
+2) Size of Binary tree  : 
 		public int size(Node root) {
 				if (root == null) {
 					return 0;
@@ -214,7 +292,7 @@ Solutions to most Popular Questions  On Tree :
 	        }
 	        return false;
 	    }
-6)	Is Binary Tree a Binary Search Tree . 
+6)	Is Binary Tree or Binary Search Tree . 
 		Online Resources: 
 		This is recursive Solution : 
 		https://www.youtube.com/watch?v=MILxfAbIhrE&list=PLrmLmBdmIlpv_jNDXtJGYTPNQ2L1gdHxu&index=16&ab_channel=TusharRoy
@@ -267,27 +345,13 @@ Solutions to most Popular Questions  On Tree :
 	Geeksforgeeks Link
 	http://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
 	
-	Best approach is , do in-order traversal of the tree , Check whether the sequence found in 
-	this traversal is in ascending order or not . No need to store this sequence in 
-	an array , just store the previous value and compare it with current value . 
-	If current value is greater than previous value then go forward , 
-	otherwise return false . 
+	Best approach is , do in-order traversal of the tree , Check whether 
+	the sequence found in this traversal is in ascending order or not . 
+	No need to store this sequence in an array , just store the previous
+	value and compare it with current value . If current value is greater
+	than previous value then go forward , otherwise return false . 
 	
 	
-7) Segment Tree : 
-	Online Resource : 
-	https://www.youtube.com/watch?v=ZBHKZF5w4YU&list=PLrmLmBdmIlpv_jNDXtJGYTPNQ2L1gdHxu&index=8&ab_channel=TusharRoy
-	1)If array size is power of 2 , then size of segment tree will be
-	arraylength*2 -1. 
-	2) If array size is not power of 2 , then we find next power of two ,
-	greater than the number and do the same 
-	newPowerOfTwo * 2 -1 
-	3) Left child  2 * i + 1
-	   Right child 2 * i + 2
-	   Parent      (i - 1)/2
-	4) 
-
-
 
 To Do List : 
 1) Write all proper output for TreeTraversals 
@@ -302,3 +366,8 @@ To Do List :
 10) Algorithm to find depth and height of tree. 
 
 
+Currently Working on 
+1) Segment Tree 
+2) AVL Tree 
+3) Red Black Tree
+4) Fenweek Tree 
