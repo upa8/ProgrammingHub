@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-import Hackerrank.MyScanner;
+import com.upa.websites.Hackerrank.MyScanner;
 
 public class Pattern extends MyScanner{
 	public static void main(String args[]) throws Exception{
