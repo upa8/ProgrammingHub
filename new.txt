@@ -1,0 +1,18 @@
+Junit Testing 
+
+Annotations 
+1) @before 
+2) @after 
+3) @test
+4) @BeforeClass
+5) @AfterClass 
+
+
+Assert Methods 
+1) assertEquals()
+2) assertTrue()
+3) assertFalse()
+4) assertArrayEquals()
+
+
+
