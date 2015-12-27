@@ -187,6 +187,17 @@ Complexity Chart
 	Video : 
 	https://www.youtube.com/watch?v=CWDQJGaN1gY&ab_channel=TusharRoy
 	
+	It is Binary Indexed Tree . Advantages of fenwik tree over segment tree are
+	1) It takes o(n) time in worst case
+	2) It takes only o(n) sapce where segment tree takes 4*(n) 
+	
+	
+	Time Complexities : 
+	1) Creationg Time : n log n
+	2) Insertion Time : log n
+	3) Update Time : 	log n 
+	4) Space complexity : o(n)
+	
 	
 
 6) Red Black Tree
