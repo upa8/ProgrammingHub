@@ -15,6 +15,7 @@ public class MaximumElement extends MyScanner {
 		long firstMax = 0;
 		long secondMax = 0;
 		Stack<Long> st = new Stack<Long>();
+
 		long count = 0;
 		while (n > 0) {
 			// count++;
@@ -25,6 +26,7 @@ public class MaximumElement extends MyScanner {
 					secondMax = firstMax;
 					firstMax = next;
 				}
+
 				st.push(next);
 			}
 			if (first == 2) {
