@@ -1,0 +1,69 @@
+String Theory 
+
+Reference 
+1) Competitive Programming Steven Halim Chapter 6 String Processing 
+2)
+
+
+Index : 
+1) Introductions 
+	
+2) KMP Algorithm  
+3) Z Algorithm 
+4) Suffix Tree using Ukkonen's algorithm 
+5) Longest palindromic Substring Manchester's Algorithms 
+6) 
+-------------------------------------------------------------------------------
+1)
+2) KMP Algorithm 
+	Online Resources : 
+	1) Youtube Video : https://goo.gl/ERtwzJ
+	2) Youtube Video : https://goo.gl/dmdFo4
+	3) 
+
+	Knuth Morris Pratts Pattern 
+	This is substring matching algorithm . 
+	
+	Naive algorithm for substring matching is :
+	
+	Online Resource : 
+	1)	http://www.geeksforgeeks.org/searching-for-
+		patterns-set-1-naive-pattern-searching/
+		
+		
+	public String naiveStringMatching(String parentString, String checkString){
+		StringBuilder str = new StringBuilder();
+		for (int i = 0; i < parentString.length(); i++) {
+			boolean found = true;
+			for (int j = 0; (j < checkString.length()) && found; j++) {
+				if (parentString.charAt(i + j) != checkString.charAt(j)) {
+					found = false;
+				}
+
+			}
+			if (found) {
+				System.out.println("String found at : " + i);
+				str.append(i + " ");
+			}
+		}
+		return str.toString();
+	}
+	Best case : 
+		1) When first character doent not matches 
+		2) Worst case when all characters are same 
+			or only last character is different 
+	
+	
+	This algorithm has o(n*m) complexity , where m and n are length of strings.
+	
+	Time complexity of KMP algorithm is o(m+n).
+	
+	To implement KMP algorithm , we need to build an array which will be a 
+	tempArray , which will have a necessary suffix and preffix information 
+	which will help us in implmenting KMP algorithm . 
+	
+	Time complexity to build prefix and suffix array is o(n) .
+	Space complexity to build prefix and suffix array is also o(n) .
+	
+
+
