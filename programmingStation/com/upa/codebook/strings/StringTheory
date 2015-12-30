@@ -12,7 +12,9 @@ Index :
 3) Z Algorithm 
 4) Suffix Tree using Ukkonen's algorithm 
 5) Longest palindromic Substring Manchester's Algorithms 
-6) 
+6) Advanced Concepts
+7) String Processing With Dynamic Programming 
+8) 
 -------------------------------------------------------------------------------
 1)
 2) KMP Algorithm 
@@ -62,8 +64,18 @@ Index :
 	tempArray , which will have a necessary suffix and preffix information 
 	which will help us in implmenting KMP algorithm . 
 	
+	This new new array is also called as longest proper prefix which is 
+	also suffix .
+	
 	Time complexity to build prefix and suffix array is o(n) .
 	Space complexity to build prefix and suffix array is also o(n) .
 	
 
+3) 
+4) 
+5) 
+6) Advanced Concepts in String Matching 
+1) String Matching 2D . 
+	Solution for such string matching is recursive backtracking . 
+	 
 
