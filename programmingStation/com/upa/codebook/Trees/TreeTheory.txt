@@ -17,7 +17,30 @@ Index :
 5) Fenwik Tree 
 
 6) Red Black Tree
-
+		Time complexity operations in red black tree is similar to the AVL 
+		tree but the balancing condition is less restrictive which means
+		that we have to make less rotations . That is why red black tree 
+		is more preffered than AVL tree . 
+		Examples : Tree Map or Sorted Map in java 
+		It is binary search tree , if a tree does not follows the properties 
+		of binary search tree then it can not be a red black tree as well . 
+		Rules of valid Red Black Tree : 
+		1) Root is always a black node . 
+		2) There is no red red parent child relationship 
+		3) Number of black node from the root to node with less than two 
+		   children is same .
+		Rules of Insertion in Red Black Tree : 
+		1) If tree is empty then create a black root node . 
+		2) If tree is not Empty then newly created node should be red node. 
+		3) If parent of newly added node is black then we are done. 
+		4) If parent of newly added node is red then check parent's siblings
+		1) If Black or Absent  
+		2) If Red 
+		
+		   
+		
+		
+		
 7) Splay Tree
 
 8) Persistent Tree

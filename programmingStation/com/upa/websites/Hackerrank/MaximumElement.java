@@ -14,8 +14,6 @@ public class MaximumElement extends MyScanner {
 
 		MaximumElement in = new MaximumElement();
 		long n = in.nextInt();
-		long firstMax = 0;
-		long secondMax = 0;
 		StackUsingLinkedList st = new StackUsingLinkedList();
 		st.clearLinkedList();
 		while (n > 0) {
@@ -29,9 +27,7 @@ public class MaximumElement extends MyScanner {
 				st.pop();
 			}
 			if (first == 3) {
-
 				System.out.println(st.getMax());
-
 			}
 			n--;
 		} // System.out.println("Count is : " + count);
