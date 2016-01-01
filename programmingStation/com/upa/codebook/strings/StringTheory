@@ -14,7 +14,10 @@ Index :
 5) Longest palindromic Substring Manacher's Algorithms 
 6) Advanced Concepts
 7) String Processing With Dynamic Programming 
-8) 
+8) Edit distance algorithm
+9) Hamming distance problem 
+10) Longest common subsequence 
+11) Longest pallindrom problem  
 -------------------------------------------------------------------------------
 1)
 2) KMP Algorithm 
@@ -80,4 +83,18 @@ Index :
 1) String Matching 2D . 
 	Solution for such string matching is recursive backtracking . 
 	 
-
+7) 
+8) Edit distance 
+	Applications of edit distance algorithms : 
+		1) Spelling checker algorithm commonly found in text editors .
+		If a user misspells a word like 'problem' , then a clever text 
+		editor that realizes that this word has a very close edit distance 
+		to the correct word 'problem' can do the correction automatically .
+	This algorithm is also known as 
+	Needleman-Wunsch's Dp algorithm 
+	
+9) 
+10) 
+11) Longest pallindrome length : 
+	Determine the length of longest pallindrome that you can make by deleting 
+	zero or more characters . 
