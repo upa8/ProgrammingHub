@@ -17,9 +17,20 @@ Index :
 8) Edit distance algorithm
 9) Hamming distance problem 
 10) Longest common subsequence 
-11) Longest pallindrom problem  
+11) Longest pallindrom problem
+12)  Robin Karp String Matching Algorithm 
 -------------------------------------------------------------------------------
 1)
+Introduction : 
+There are following algorithms for substring matching : 
+1) Brute Force 
+2) KMP algorithm 
+3) Robin Karp 
+4) Z - Algorithm 
+5) Boyer-Moore
+6) Aho - Corasick 
+7) Finite state automation 
+
 2) KMP Algorithm 
 	Online Resources : 
 	1) Youtube Video : https://goo.gl/ERtwzJ
@@ -74,7 +85,8 @@ Index :
 	Space complexity to build prefix and suffix array is also o(n) .
 	
 
-3) 
+3) 	This algorithm has same time complexity as KMP algorithm . 
+	
 4) 
 5) Longest Palindromic Substring Manacher's Algorithms 
 	
@@ -98,3 +110,12 @@ Index :
 11) Longest pallindrome length : 
 	Determine the length of longest pallindrome that you can make by deleting 
 	zero or more characters . 
+12) Robin Karp String Matching Algorithm 
+	In this algorithm we use hashing technique . 
+	Time complexity : o(m*n)
+	
+	Application : 
+	1) Plagarism
+	2) Also used when multiple pattern finding 
+13) Boyer's Moore Algorithm 
+	Time complexity is : 0(n) 
