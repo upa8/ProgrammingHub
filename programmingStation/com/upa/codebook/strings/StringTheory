@@ -119,3 +119,4 @@ There are following algorithms for substring matching :
 	2) Also used when multiple pattern finding 
 13) Boyer's Moore Algorithm 
 	Time complexity is : 0(n) 
+	
