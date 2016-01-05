@@ -1,4 +1,4 @@
-package Data_Structures;
+package com.upa.java.builtInDS;
 
 //DFS AND BFS Algorithmsimport java.util.InputMismatchException;
 import java.util.Arrays;

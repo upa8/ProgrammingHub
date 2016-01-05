@@ -1,4 +1,4 @@
-package Data_Structures;
+package com.upa.java.builtInDS;
 
 import java.util.Vector;
 import java.util.Enumeration;

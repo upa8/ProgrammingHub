@@ -1,4 +1,4 @@
-package Data_Structures;
+package com.upa.java.builtInDS;
 import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.Queue;

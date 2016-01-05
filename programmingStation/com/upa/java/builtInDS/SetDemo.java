@@ -1,4 +1,4 @@
-package Data_Structures;
+package com.upa.java.builtInDS;
 /*
  * Set does not allow duplicate elements to add in it . 
  * Also , Treeset is used to sort all the elements present in the set . 
