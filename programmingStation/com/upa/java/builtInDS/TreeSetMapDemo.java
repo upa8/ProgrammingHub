@@ -51,9 +51,6 @@ public class TreeSetMapDemo {
 				+ ", grace's score is " + mapper.get("grace"));
 		System.out.println("==================");
 
-		// interesting usage of SubMap
-		// display data between ["f".."m") ('felix' is included, martin' is
-		// excluded)
 		SortedMap<String, Integer> res = mapper.subMap("f", "m");
 		System.out.println(res.keySet());
 		System.out.println(res.values());
@@ -77,5 +74,17 @@ public class TreeSetMapDemo {
 		if (!used_values.contains(79)) {
 			System.out.println("79 not found");
 		}
+		// Gives element lower than this element (Returns only recent 1 element)
+		System.out.println("Lower" + used_values.lower(80));
+		// Gives element higher than this element (Returns only recent 1
+		// element)
+		System.out.println("Higher " + used_values.higher(75));
+		// Similar to higher functions
+		System.out.println("Celling " + used_values.ceiling(79));
+		/*
+		 * Other important methods are pollFirst() - Removes lowest number
+		 * pollLast() - Removes highest number subSet() tailSet()
+		 */
+		// Also the mapper class has many features
 	}
 }

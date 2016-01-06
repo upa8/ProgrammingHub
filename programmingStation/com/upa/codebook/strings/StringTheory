@@ -2,12 +2,10 @@ String Theory
 
 Reference 
 1) Competitive Programming Steven Halim Chapter 6 String Processing 
-2)
-
+2) 
 
 Index : 
-1) Introductions 
-	
+1) Introductions 	
 2) KMP Algorithm  
 3) Z Algorithm 
 4) Suffix Tree using Ukkonen's algorithm 
@@ -19,7 +17,10 @@ Index :
 10) Longest common subsequence 
 11) Longest pallindrom problem
 12)  Robin Karp String Matching Algorithm 
+13) Boyer's Moore Algorithm
+14) Unique Character program
 -------------------------------------------------------------------------------
+
 1)
 Introduction : 
 There are following algorithms for substring matching : 
@@ -119,4 +120,8 @@ There are following algorithms for substring matching :
 	2) Also used when multiple pattern finding 
 13) Boyer's Moore Algorithm 
 	Time complexity is : 0(n) 
+14) Unique character program: 
+	
+
+
 	
