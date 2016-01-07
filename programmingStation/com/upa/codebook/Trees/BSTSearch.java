@@ -1,4 +1,4 @@
-package com.upa.codebook.Trees;
+package com.upa.codebook.trees;
 
 /**
  * Date 04/11/2015

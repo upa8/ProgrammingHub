@@ -1,4 +1,4 @@
-package com.upa.codebook.Trees;
+package com.upa.codebook.trees;
 
 /**
  * Write a program to implement fenwick or binary indexed tree

@@ -1,4 +1,4 @@
-package com.upa.codebook.BitMagic;
+package com.upa.codebook.bitMagic;
 
 import java.util.Stack;
 

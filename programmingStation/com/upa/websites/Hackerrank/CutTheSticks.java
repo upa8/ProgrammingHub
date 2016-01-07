@@ -1,4 +1,4 @@
-package com.upa.websites.Hackerrank;
+package com.upa.websites.hackerrank;
 
 import java.util.HashMap;
 import java.util.Map;

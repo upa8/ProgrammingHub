@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.upa.websites.Hackerrank.PallindromeIndex;
+import com.upa.websites.hackerrank.PallindromeIndex;
 
 public class PallindromeIndexTest {
 

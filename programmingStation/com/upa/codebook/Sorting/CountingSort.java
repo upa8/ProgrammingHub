@@ -1,4 +1,4 @@
-package com.upa.codebook.Sorting;
+package com.upa.codebook.sorting;
 
 public class CountingSort {
 

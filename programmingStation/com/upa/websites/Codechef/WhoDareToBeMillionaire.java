@@ -1,4 +1,4 @@
-package com.upa.websites.Codechef;
+package com.upa.websites.codechef;
 /*
  * Author : Pratik Upacharya
  * Question : https://www.codechef.com/OCT15/problems/WDTBAM

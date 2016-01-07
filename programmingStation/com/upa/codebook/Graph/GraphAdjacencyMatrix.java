@@ -1,4 +1,4 @@
-package com.upa.codebook.Graph;
+package com.upa.codebook.graph;
 
 import com.upa.templates.MyScanner;
 

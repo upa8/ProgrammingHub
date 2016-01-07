@@ -1,4 +1,4 @@
-package com.upa.websites.GeeksForGeeks;
+package com.upa.websites.geeksForGeeks;
 /*
  * Author : Pratik Upacharya . 
  * Question Link  :

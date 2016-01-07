@@ -1,4 +1,4 @@
-package com.upa.codebook.Trees;
+package com.upa.codebook.trees;
 
 import java.util.Deque;
 import java.util.LinkedList;

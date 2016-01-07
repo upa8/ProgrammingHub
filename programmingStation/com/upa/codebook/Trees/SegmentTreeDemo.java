@@ -1,4 +1,4 @@
-package com.upa.codebook.Trees;
+package com.upa.codebook.trees;
 
 public class SegmentTreeDemo { // the segment tree is stored like a heap array
 	private final int[] st, A;

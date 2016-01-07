@@ -1,4 +1,4 @@
-package com.upa.websites.Hackerrank;
+package com.upa.websites.hackerrank;
 /*
  * Question link :
  * 	https://www.hackerrank.com/contests/hourrank-4/challenges/new-year-party

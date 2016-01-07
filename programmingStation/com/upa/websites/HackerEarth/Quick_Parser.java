@@ -1,1 +1,1 @@
-package com.upa.websites.HackerEarth;
+package com.upa.websites.hackerEarth;

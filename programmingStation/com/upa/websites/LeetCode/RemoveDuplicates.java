@@ -1,4 +1,4 @@
-package com.upa.websites.LeetCode;
+package com.upa.websites.leetCode;
 /*
 public class Solution {
     public int removeDuplicates(int[] nums) {

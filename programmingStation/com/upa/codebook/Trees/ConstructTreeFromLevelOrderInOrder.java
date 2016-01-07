@@ -1,4 +1,4 @@
-package com.upa.codebook.Trees;
+package com.upa.codebook.trees;
 
 /**
  * http://www.geeksforgeeks.org/construct-tree-inorder-level-order-traversals/

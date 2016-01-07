@@ -1,4 +1,4 @@
-package com.upa.websites.LeetCode;
+package com.upa.websites.leetCode;
 /*
  * Author : Pratik Upacharya 
  * Question : https://leetcode.com/problems/two-sum/

@@ -1,6 +1,6 @@
-package com.upa.codebook.Stack;
+package com.upa.codebook.stack;
 
-import com.upa.codebook.LinkedList.LinkList;
+import com.upa.codebook.linkedList.LinkList;
 
 public class LinkListStack<T> {
 

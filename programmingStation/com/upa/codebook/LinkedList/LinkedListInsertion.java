@@ -1,4 +1,4 @@
-package com.upa.codebook.LinkedList;
+package com.upa.codebook.linkedList;
 
 //A complete working Java program to demonstrate all insertion methods
 //on linked list

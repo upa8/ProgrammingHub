@@ -1,4 +1,4 @@
-package com.upa.websites.Hackerrank;
+package com.upa.websites.hackerrank;
 
 /*
  * Author : Pratik Upacharya

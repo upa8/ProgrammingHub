@@ -1,4 +1,4 @@
-package com.upa.websites.HackerEarth;
+package com.upa.websites.hackerEarth;
 
 import java.io.BufferedReader;
 import java.io.IOException;

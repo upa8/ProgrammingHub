@@ -1,4 +1,4 @@
-package com.upa.websites.LeetCode;
+package com.upa.websites.leetCode;
 /*
  * Author : Pratik Upacharya
  * question :  https://leetcode.com/problems/first-bad-version/

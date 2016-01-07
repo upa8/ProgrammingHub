@@ -1,4 +1,4 @@
-package com.upa.codebook.BitMagic;
+package com.upa.codebook.bitMagic;
 
 /**
  * http://www.geeksforgeeks.org/next-power-of-2/

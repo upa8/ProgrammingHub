@@ -1,4 +1,4 @@
-package com.upa.codebook.Queue;
+package com.upa.codebook.queue;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

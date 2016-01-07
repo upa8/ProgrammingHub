@@ -1,4 +1,4 @@
-package com.upa.websites.Codechef;
+package com.upa.websites.codechef;
 
 // Wrong output
 public class TIMEASR extends MyScanner{

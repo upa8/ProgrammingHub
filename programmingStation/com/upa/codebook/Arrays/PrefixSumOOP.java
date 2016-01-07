@@ -1,4 +1,4 @@
-package com.upa.codebook.Arrays;
+package com.upa.codebook.arrays;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package com.upa.codebook.Stack;
+package com.upa.codebook.stack;
 /*
  * Java Program to Implement Stack
    Reference = http://www.sanfoundry.com/java-program-implement-stack/

@@ -1,4 +1,4 @@
-package com.upa.websites.Spoj;
+package com.upa.websites.spoj;
 
 import java.io.BufferedReader;
 import java.io.IOException;

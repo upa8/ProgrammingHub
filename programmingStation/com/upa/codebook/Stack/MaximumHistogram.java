@@ -1,4 +1,4 @@
-package com.upa.codebook.Stack;
+package com.upa.codebook.stack;
 
 import java.util.Deque;
 import java.util.LinkedList;

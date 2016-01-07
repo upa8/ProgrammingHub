@@ -1,4 +1,4 @@
-package com.upa.codebook.Trees;
+package com.upa.codebook.trees;
 
 /**
  * http://www.geeksforgeeks.org/connect-nodes-at-same-level-with-o1-extra-space/

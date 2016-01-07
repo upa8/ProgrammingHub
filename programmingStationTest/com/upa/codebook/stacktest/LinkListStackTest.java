@@ -9,7 +9,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import com.upa.codebook.Stack.LinkListStack;
+import com.upa.codebook.stack.LinkListStack;
 
 public class LinkListStackTest {
 

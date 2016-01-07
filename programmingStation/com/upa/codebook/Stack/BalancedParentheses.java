@@ -1,5 +1,5 @@
 
-package com.upa.codebook.Stack;
+package com.upa.codebook.stack;
 
 import java.util.Scanner;
 import java.util.Stack;

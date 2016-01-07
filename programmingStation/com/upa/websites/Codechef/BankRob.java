@@ -1,4 +1,4 @@
-package com.upa.websites.Codechef;
+package com.upa.websites.codechef;
 
 import com.upa.templates.MyScanner;
 

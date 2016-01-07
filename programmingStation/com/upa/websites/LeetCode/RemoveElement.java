@@ -1,4 +1,4 @@
-package com.upa.websites.LeetCode;
+package com.upa.websites.leetCode;
 /*
 public class Solution {
     public int removeElement(int[] nums, int val) {

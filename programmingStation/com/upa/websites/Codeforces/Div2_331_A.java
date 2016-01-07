@@ -1,4 +1,4 @@
-package com.upa.websites.Codeforces;
+package com.upa.websites.codeforces;
 
 import java.util.HashSet;
 import java.util.Iterator;

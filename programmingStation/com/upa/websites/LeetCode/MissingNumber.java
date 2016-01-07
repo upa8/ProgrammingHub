@@ -1,4 +1,4 @@
-package com.upa.websites.LeetCode;
+package com.upa.websites.leetCode;
 
 import java.util.HashMap;
 /*

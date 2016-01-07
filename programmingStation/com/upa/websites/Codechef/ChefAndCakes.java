@@ -1,4 +1,4 @@
-package com.upa.websites.Codechef;
+package com.upa.websites.codechef;
 
 public class ChefAndCakes extends MyScanner {
 

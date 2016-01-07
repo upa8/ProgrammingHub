@@ -1,4 +1,4 @@
-package com.upa.codebook.LinkedList;
+package com.upa.codebook.linkedList;
 
 public class Node {
 

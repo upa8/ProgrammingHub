@@ -1,4 +1,4 @@
-package com.upa.websites.Hackerrank;
+package com.upa.websites.hackerrank;
 
 import java.util.ArrayList;
 import java.util.PriorityQueue;

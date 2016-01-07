@@ -1,4 +1,4 @@
-package com.upa.websites.Codechef;
+package com.upa.websites.codechef;
 
 /*	Question : https://www.codechef.com/problems/ORACLCS
  * 	Editorials : https://discuss.codechef.com/questions/77617/oraclcs-editorial

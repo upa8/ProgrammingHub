@@ -1,4 +1,4 @@
-package com.upa.websites.Spoj;
+package com.upa.websites.spoj;
 
 /*
  * Author : Pratik Upacharya

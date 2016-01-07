@@ -1,4 +1,4 @@
-package com.upa.websites.LeetCode;
+package com.upa.websites.leetCode;
 //Determine whether an integer is a palindrome. Do this without extra space.
 //Question link : https://leetcode.com/problems/palindrome-number/
 
