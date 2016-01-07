@@ -2,6 +2,8 @@ package com.upa.websites.Hackerrank;
 
 import java.util.HashMap;
 
+import com.upa.templates.MyScanner;
+
 /*
  * Question link :
  * 	https://www.hackerrank.com/contests/hourrank-4/challenges/new-year-chaos

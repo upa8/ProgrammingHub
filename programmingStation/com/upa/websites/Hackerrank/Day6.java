@@ -1,9 +1,11 @@
 package com.upa.websites.Hackerrank;
 
-public class Day_6_Review extends MyScanner {
+import com.upa.templates.MyScanner;
+
+public class Day6 extends MyScanner {
 
 	public static void main(String args[]) throws Exception {
-		Day_6_Review in = new Day_6_Review();
+		Day6 in = new Day6();
 		int n = in.nextInt();
 		for (int i = 0; i < n; i++) {
 			for (int j = n - 1; j > i; j--) {

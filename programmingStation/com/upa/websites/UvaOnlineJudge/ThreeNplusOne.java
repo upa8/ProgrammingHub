@@ -1,5 +1,7 @@
 package com.upa.websites.UvaOnlineJudge;
 
+import com.upa.templates.MyScanner;
+
 public class ThreeNplusOne extends MyScanner {
 
 	/**
@@ -24,7 +26,7 @@ public class ThreeNplusOne extends MyScanner {
 				count++;
 				break;
 			}
-		} while ( start != 1 );
+		} while (start != 1);
 		System.out.println(a + " " + b + " " + count);
 	}
 }

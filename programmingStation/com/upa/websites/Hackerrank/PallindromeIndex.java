@@ -1,5 +1,7 @@
 package com.upa.websites.Hackerrank;
 
+import com.upa.templates.MyScanner;
+
 public class PallindromeIndex extends MyScanner {
 
 	public static void main(String args[]) throws Exception {

@@ -1,4 +1,7 @@
 package com.upa.websites.Hackerrank;
+
+import com.upa.templates.MyScanner;
+
 /*
  *  Question : https://www.hackerrank.com/challenges/saveprincess
  *  Editorials :

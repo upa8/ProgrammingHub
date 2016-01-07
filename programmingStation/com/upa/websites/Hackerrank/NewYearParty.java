@@ -1,11 +1,12 @@
 package com.upa.websites.Hackerrank;
-
 /*
  * Question link :
  * 	https://www.hackerrank.com/contests/hourrank-4/challenges/new-year-party
  */
 
 import java.util.Arrays;
+
+import com.upa.templates.MyScanner;
 
 public class NewYearParty extends MyScanner {
 

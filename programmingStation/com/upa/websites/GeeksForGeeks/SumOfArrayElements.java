@@ -1,6 +1,6 @@
 package com.upa.websites.GeeksForGeeks;
 
-import Codebook.MyScanner;
+import com.upa.templates.MyScanner;
 
 public class SumOfArrayElements extends MyScanner {
 

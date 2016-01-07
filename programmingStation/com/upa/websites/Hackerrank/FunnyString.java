@@ -1,9 +1,11 @@
 package com.upa.websites.Hackerrank;
 
+import com.upa.templates.MyScanner;
+
 /*
- * Author : Pratik Upacharya 
+ * Author : Pratik Upacharya
  * Question : https://www.hackerrank.com/challenges/funny-string
- * 
+ *
  */
 public class FunnyString extends MyScanner {
 
@@ -14,13 +16,13 @@ public class FunnyString extends MyScanner {
 		// TODO Auto-generated method stub
 		FunnyString in = new FunnyString();
 		int t = in.nextInt();
-		while ( t > 0 ) {
-			// Take String As input 
+		while (t > 0) {
+			// Take String As input
 			String a = in.nextToken();
 			int l = a.length();
 			int n = l / 2;
 			int check = 0;
-			for ( int i = 0 ; i < n ; i++, l-- ) {
+			for (int i = 0; i < n; i++, l--) {
 				int left = Math.abs(a.charAt(i) - a.charAt(i + 1));
 				int right = Math.abs(a.charAt(l - 2) - a.charAt(l - 1));
 				if (left != right) {

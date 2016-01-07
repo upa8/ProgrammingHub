@@ -3,12 +3,12 @@ package com.upa.websites.Codeforces;
 import java.util.HashSet;
 import java.util.Iterator;
 
-import com.upa.websites.Hackerrank.MyScanner;
+import com.upa.templates.MyScanner;
 
 /*
  * Question : http://codeforces.com/contest/596/problem/A
- * Type : Ad-Hoc . Mathematics . 
- * 
+ * Type : Ad-Hoc . Mathematics .
+ *
  */
 
 public class Div2_331_A extends MyScanner {
@@ -21,14 +21,14 @@ public class Div2_331_A extends MyScanner {
 		Div2_331_A in = new Div2_331_A();
 		int n = in.nextInt();
 		if (n == 1) {
-			// Get this input only for formality 
+			// Get this input only for formality
 			int x = in.nextInt();
 			int y = in.nextInt();
 			System.out.println("-1");
 		} else {
 			HashSet<Integer> H_X = new HashSet<Integer>();
 			HashSet<Integer> H_Y = new HashSet<Integer>();
-			while ( n > 0 ) {
+			while (n > 0) {
 				int x = in.nextInt();
 				int y = in.nextInt();
 				H_X.add(x);
@@ -49,10 +49,10 @@ public class Div2_331_A extends MyScanner {
 		Iterator<Integer> I_X = h_X.iterator();
 		Iterator<Integer> I_Y = h_Y.iterator();
 		int d_x = 0, d_y = 0;
-		while ( I_X.hasNext() ) {
+		while (I_X.hasNext()) {
 			d_x = Math.abs(I_X.next() - I_X.next());
 		}
-		while ( I_Y.hasNext() ) {
+		while (I_Y.hasNext()) {
 			d_y = Math.abs(I_Y.next() - I_Y.next());
 		}
 		return (d_x * d_y);

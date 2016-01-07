@@ -1,8 +1,10 @@
 package com.upa.websites.Hackerrank;
 
-public class Day_5_Loop extends MyScanner {
+import com.upa.templates.MyScanner;
+
+public class Day5 extends MyScanner {
 	public static void main(String args[]) throws Exception {
-		Day_5_Loop in = new Day_5_Loop();
+		Day5 in = new Day5();
 		int t = in.nextInt();
 		while (t > 0) {
 			int a = in.nextInt();

@@ -2,22 +2,10 @@ package com.upa.codebook.strings;
 
 import java.util.HashMap;
 
-import Codebook.MyScanner;
+import com.upa.templates.MyScanner;
 
 /*
  * Question Link :
- *
- * Test
- * Input:
- * 3
- * pratik
- * kumar
- * upacharya
- *
- * Output
- * unique
- * unique
- * notunique
  *
  */
 public class StringUniqueness extends MyScanner {

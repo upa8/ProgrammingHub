@@ -8,6 +8,8 @@ package com.upa.websites.Hackerrank;
 import java.util.Iterator;
 import java.util.LinkedList;
 
+import com.upa.templates.MyScanner;
+
 public class MaximumElement extends MyScanner {
 
 	public static void main(String[] args) throws Exception {

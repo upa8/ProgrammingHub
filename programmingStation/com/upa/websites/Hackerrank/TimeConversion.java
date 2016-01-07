@@ -1,5 +1,7 @@
 package com.upa.websites.Hackerrank;
 
+import com.upa.templates.MyScanner;
+
 public class TimeConversion extends MyScanner {
 	/**
 	 * @param args
@@ -20,8 +22,8 @@ public class TimeConversion extends MyScanner {
 			System.out.println(hh + time.substring(2, (time.length() - 2)));
 		} else {
 			if (hh == 12) {
-				System.out.println("00"
-				        + time.substring(2, (time.length() - 2)));
+				System.out
+						.println("00" + time.substring(2, (time.length() - 2)));
 			} else {
 				System.out.println(time.substring(0, (time.length() - 2)));
 			}

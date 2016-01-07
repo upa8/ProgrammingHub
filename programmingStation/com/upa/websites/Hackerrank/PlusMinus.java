@@ -2,6 +2,8 @@ package com.upa.websites.Hackerrank;
 
 import java.text.DecimalFormat;
 
+import com.upa.templates.MyScanner;
+
 public class PlusMinus extends MyScanner {
 
 	/**
@@ -14,7 +16,7 @@ public class PlusMinus extends MyScanner {
 		float pos = 0;
 		float neg = 0;
 		float zero = 0;
-		for ( int i = 0 ; i < n ; i++ ) {
+		for (int i = 0; i < n; i++) {
 			int num = in.nextInt();
 			if (num == 0) {
 				zero += 1;

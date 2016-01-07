@@ -2,6 +2,8 @@ package com.upa.websites.Hackerrank;
 
 import java.util.Arrays;
 
+import com.upa.templates.MyScanner;
+
 public class TwoStrings extends MyScanner {
 
 	public static void main(String args[]) throws Exception {

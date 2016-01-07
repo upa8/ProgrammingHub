@@ -14,8 +14,20 @@ Index :
 	2.5) Spiral- Order 
 3) Binary Search Tree 
 4) Segment Tree 
-5) Fenwik Tree 
-
+5) Fenwick Tree 
+	We use fenwick tree in examples when we want to find sum of elements 
+	of array . Like , if we want to find sum of elements of array between 
+	i and j . In such case we can build a prefix based array which will 
+	contain sum of previous number's sum . But this prefix array won't 
+	scale if we have multiple updates in the given array . So , in this 
+	situations we use fenwick tree . Also we can solve this problems using 
+	segement tree but , segement tree uses 4*n space also in worst case 
+	it take 4*log(n) time to search . Fenwick tree only take n space . 
+	Also , fenwick tree is less complecated to code than segment tree . 
+	We use bit manipulation while implementing fenwick tree . 
+	Amount of time to create this fenwick tree is nlog(n) . 
+	Amount of time to update this fenwick tree is log(n) . 
+	
 6) Red Black Tree
 		Time complexity operations in red black tree is similar to the AVL 
 		tree but the balancing condition is less restrictive which means

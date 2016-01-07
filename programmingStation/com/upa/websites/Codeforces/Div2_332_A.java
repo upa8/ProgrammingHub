@@ -1,6 +1,6 @@
 package com.upa.websites.Codeforces;
 
-import com.upa.websites.Hackerrank.MyScanner;
+import com.upa.templates.MyScanner;
 
 public class Div2_332_A extends MyScanner {
 
@@ -14,7 +14,7 @@ public class Div2_332_A extends MyScanner {
 		long b = in.nextLong();
 		long c = in.nextLong();
 		long sum = 0;
-		// minimum weight 
+		// minimum weight
 		long first = 0;
 		long second = 0;
 		long third = 0;

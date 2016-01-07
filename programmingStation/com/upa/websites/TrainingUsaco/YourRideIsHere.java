@@ -1,5 +1,7 @@
 package com.upa.websites.TrainingUsaco;
 
+import com.upa.templates.MyScanner;
+
 public class YourRideIsHere extends MyScanner {
 
 	/**
@@ -14,10 +16,10 @@ public class YourRideIsHere extends MyScanner {
 		int lengthOfStringB = b.length();
 		long stringAProduct = 1;
 		long stringBProduct = 1;
-		for ( int i = 0 ; i < lengthOfStringA ; i++ ) {
+		for (int i = 0; i < lengthOfStringA; i++) {
 			stringAProduct *= (a.charAt(i) - 64);
 		}
-		for ( int i = 0 ; i < lengthOfStringB ; i++ ) {
+		for (int i = 0; i < lengthOfStringB; i++) {
 			stringBProduct *= (b.charAt(i) - 64);
 		}
 		System.out.println("a: " + stringAProduct + " b: " + stringBProduct);

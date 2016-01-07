@@ -1,6 +1,6 @@
 package com.upa.cryptography;
 
-import com.upa.websites.Hackerrank.MyScanner;
+import com.upa.templates.MyScanner;
 
 public class CeaserCipher extends MyScanner {
 	static StringBuilder incryptedText;

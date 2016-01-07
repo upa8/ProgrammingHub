@@ -3,7 +3,7 @@ package com.upa.websites.Hackerrank;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class utopian_tree {
+public class Utopian_tree {
 	  public static void main(String[] args) throws IOException{ 
 	    	Scanner sc = new Scanner(System.in);
 	    	int t = sc.nextInt();
