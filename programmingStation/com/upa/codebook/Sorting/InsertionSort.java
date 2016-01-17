@@ -12,27 +12,31 @@ public class InsertionSort {
 		}
 
 		in.printArray(a);
-		in.insertionSort(a);
 		System.out.println();
-		in.printArray(a);
+		in.insertionSort(a, in);
+		System.out.println();
+		// in.printArray(a);
 
 	}
 
 	public void printArray(int a[]) {
-		for (int i = 0; i < 10; i++) {
-			System.out.print(a[i] + " ");
+		for (int k = 0; k < a.length; k++) {
+			System.out.print(a[k] + " ");
 		}
 	}
 
-	public void insertionSort(int a[]) {
-		for (int i = 2; i <= (a.length - 1); i++) {
+	public void insertionSort(int a[], InsertionSort in) {
+		for (int i = 1; i < a.length; i++) {
 			int v = a[i];
 			int j = i;
-			while ((a[j - 1] > v) && (j >= 1)) {
+			while ((a[j - 1] > v) && (j >= 0)) {
 				a[j] = a[j - 1];
 				j--;
 			}
 			a[j] = v;
+
+			in.printArray(a);
+			System.out.println();
 		}
 	}
 
