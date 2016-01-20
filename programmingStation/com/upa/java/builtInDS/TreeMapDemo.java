@@ -19,6 +19,8 @@ class Dogs implements Comparable<Dogs> {
 
 	@Override
 	public int compareTo(Dogs o) {
+		// System.out.println(o.size + " " + this.size);
+		// System.out.println(o.size - this.size);
 		return o.size - this.size;
 	}
 }
@@ -28,7 +30,7 @@ public class TreeMapDemo {
 		Dogs d1 = new Dogs("red", 30);
 		Dogs d2 = new Dogs("black", 20);
 		Dogs d3 = new Dogs("white", 10);
-		Dogs d4 = new Dogs("nothing", 14);
+		Dogs d4 = new Dogs("nothing", 40);
 
 		TreeMap<Dogs, Integer> treeMap = new TreeMap<Dogs, Integer>();
 		treeMap.put(d1, 10);
