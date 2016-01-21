@@ -24,7 +24,6 @@ public class MonkAndTaskSol1 extends MyScanner {
 				if (maxCount < count) {
 					maxCount = count;
 				}
-
 				if (hm.containsKey(count)) {
 					List<String> currentList = hm.get(count);
 					currentList.add(str);
