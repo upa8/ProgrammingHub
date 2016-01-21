@@ -1,56 +1,54 @@
 package com.upa.websites.hackerEarth;
 
-import java.util.Comparator;
-import java.util.Map;
-import java.util.TreeMap;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.math.BigInteger;
+import java.util.PriorityQueue;
+import java.util.Stack;
 
 import com.upa.templates.MyScanner;
 
 public class MonkAndTask extends MyScanner {
+	static PrintWriter out;
 
 	public static void main(String args[]) throws Exception {
 
 		MonkAndTask in = new MonkAndTask();
+		out = new PrintWriter(new OutputStreamWriter(System.out));
 		int t = in.nextInt();
 		while (t-- > 0) {
 			int n = in.nextInt();
-			// PriorityQueue<Day> pq = new PriorityQueue<Day>();
-			TreeMap<Integer, Day> map = new TreeMap<Integer, Day>();
+			PriorityQueue<Day> pq = new PriorityQueue<Day>();
+			pq.clear();
+			// TreeMap<Integer, Day> map = new TreeMap<Integer, Day>();
 			for (int i = 0; i < n; i++) {
-				long x = in.nextLong();
-				long z = x;
-				int countOne = 0;
-				while (x != 0) {
-					// taking mod
-					long y = in.modulo(x, 2);
-					if (y == 1) {
-						countOne++;
-					}
-					// dividing by 2 efficiently
-					x = x >> 1;
-				}
-				// now add this into data structure
+				String str = in.nextToken();
+				BigInteger val = new BigInteger(str);
+				int bitCount = val.bitCount();
 				Day d = new Day();
 				d.setDay(i);
-				d.setValue(z);
-				d.setCountOne(countOne);
-				map.put(i, d);
-				// pq.add(d);
-				// tr.put(d, i);
+				d.setValue(str);
+				d.setCountOne(bitCount);
+				pq.add(d);
 			}
-			// System.out.println("Size " + pq.size());
-			// System.out.println(tr.size());
-			/*
-			 * Stack<Long> st = new Stack<Long>(); while (!pq.isEmpty()) { Day d
-			 * = pq.poll(); System.out.print(d.getValue() + " ");
-			 * System.out.print(d.getDay() + " ");
-			 * System.out.print(d.getcountOne() + " ");
-			 *
-			 * // st.push(d.getValue()); } while (!st.isEmpty()) {
-			 * System.out.print(st.pop() + " "); }
-			 */
-			System.out.println();
+			Stack<Day> st = new Stack<Day>();
+			st.clear();
+			while (!pq.isEmpty()) {
+				Day d = pq.poll();
+				st.push(d);
+			}
+			StringBuilder ans = new StringBuilder();
+			while (!st.isEmpty()) {
+				Day d = st.pop();
+				// System.out.print(d.getValue() + " ");
+				String val = d.getValue();
+				ans.append(val + " ");
+				// out.write(val + " ");
+			}
+			System.out.println(ans);
+			// out.write("\n");
 		}
+		out.close();
 
 	}
 
@@ -64,7 +62,7 @@ class Day implements Comparable<Day> {
 
 	private int day;
 	private int countOne;
-	private long value;
+	private String value;
 
 	Day() {
 
@@ -78,7 +76,7 @@ class Day implements Comparable<Day> {
 		return this.countOne;
 	}
 
-	public long getValue() {
+	public String getValue() {
 		return this.value;
 	}
 
@@ -90,8 +88,8 @@ class Day implements Comparable<Day> {
 		this.countOne = countOne;
 	}
 
-	public void setValue(long v) {
-		this.value = v;
+	public void setValue(String str) {
+		this.value = str;
 	}
 
 	@Override
@@ -100,24 +98,4 @@ class Day implements Comparable<Day> {
 		return o.countOne - this.countOne;
 		// return this.countOne - o.countOne;
 	}
-}
-
-class ValueComparator implements Comparator {
-	Map base;
-
-	public ValueComparator(Map base) {
-		this.base = base;
-	}
-
-	public int compare(int a, int b) {
-		// TODO Auto-generated method stub
-		int x = (int) this.base.get(a);
-		int y = (int) this.base.get(b);
-		if (x >= y) {
-			return -1;
-		} else {
-			return 1;
-		} // returning 0 would merge keys
-	}
-
 }
