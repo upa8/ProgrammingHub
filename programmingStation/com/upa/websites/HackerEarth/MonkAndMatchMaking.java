@@ -1,5 +1,7 @@
 package com.upa.websites.hackerEarth;
 
+import java.util.HashMap;
+
 import com.upa.templates.MyScanner;
 
 public class MonkAndMatchMaking extends MyScanner {
@@ -23,7 +25,11 @@ public class MonkAndMatchMaking extends MyScanner {
 				// System.out.println(firstSub);
 				String secondSub = str.substring(l2 - 1, r2);
 				// System.out.println(secondSub);
-				if (firstSub.equals(secondSub)) {
+				HashMap<String, String> hm = new HashMap<String, String>();
+				hm.put(firstSub, firstSub);
+				// hm.containsKey(secondSub);
+				// if (firstSub.equals(secondSub)) {
+				if (hm.containsKey(secondSub)) {
 					System.out.println("Yes");
 				} else {
 					System.out.println("No");
