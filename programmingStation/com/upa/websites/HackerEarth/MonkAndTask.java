@@ -45,8 +45,9 @@ public class MonkAndTask extends MyScanner {
 				ans.append(val + " ");
 				// out.write(val + " ");
 			}
-			System.out.println(ans);
-			// out.write("\n");
+			// System.out.println(ans);
+			out.write(ans + " \n");
+			out.flush();
 		}
 		out.close();
 
