@@ -34,4 +34,19 @@ public class CoinChangeProblem extends MyScanner {
 		return temp[coins.length][total];
 	}
 
+	public int numberOfSolutionsOnSpace(int total, int arr[]){
+
+        int temp[] = new int[total+1];
+
+        temp[0] = 1;
+        for(int i=0; i < arr.length; i++){
+            for(int j=1; j <= total ; j++){
+                if(j >= arr[i]){
+                    temp[j] += temp[j-arr[i]];
+                }
+            }
+        }
+        return temp[total];
+    }
+
 }
