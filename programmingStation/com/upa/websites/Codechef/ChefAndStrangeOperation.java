@@ -1,4 +1,4 @@
-package com.upa.JunitExamples;
+package com.upa.websites.codechef;
 
 public class ChefAndStrangeOperation extends MyScanner {
 

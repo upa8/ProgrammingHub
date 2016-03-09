@@ -1,4 +1,4 @@
-package com.upa.JunitExamples;
+package com.upa.websites.codechef;
 
 import java.util.Arrays;
 
