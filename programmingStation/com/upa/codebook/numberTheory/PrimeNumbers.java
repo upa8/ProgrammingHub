@@ -221,7 +221,7 @@ public class PrimeNumbers {
 
 	}
 
-	public static void main(String[] args) {
-		new PrimeNumbers().run();
-	}
+	// public static void main(String[] args) {
+	// new PrimeNumbers().run();
+	// }
 }
