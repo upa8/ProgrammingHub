@@ -24,7 +24,7 @@ public class MyScanner {
 		return this.st.nextToken();
 	}
 
-	public int nextInt() throws Exception {
+	public int nextInt() throws Exception, Exception {
 		return Integer.parseInt(this.nextToken());
 	}
 
@@ -34,9 +34,5 @@ public class MyScanner {
 
 	public double nextDouble() throws Exception {
 		return Double.parseDouble(this.nextToken());
-	}
-
-	public String readLine() throws Exception {
-		return this.br.readLine();
 	}
 }
