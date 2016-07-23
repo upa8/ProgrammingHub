@@ -35,4 +35,10 @@ public class MyScanner {
 	public double nextDouble() throws Exception {
 		return Double.parseDouble(this.nextToken());
 	}
+
+	public char nextChar() throws Exception {
+		// return Double.parseDouble(this.nextToken());
+		String str = this.nextToken();
+		return str.charAt(0);
+	}
 }
