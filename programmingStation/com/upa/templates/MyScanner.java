@@ -1,6 +1,7 @@
 package com.upa.templates;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
@@ -40,5 +41,9 @@ public class MyScanner {
 		// return Double.parseDouble(this.nextToken());
 		String str = this.nextToken();
 		return str.charAt(0);
+	}
+
+	public String readLine() throws IOException {
+		return this.br.readLine().trim();
 	}
 }
