@@ -19,7 +19,6 @@ public class P389FindDifference extends MyScanner {
 			sumT += (t.charAt(i) - 'a');
 		}
 		sumT += t.charAt(length);
-		System.out.println(sumT - sumS);
 
 		return (char) (sumT - sumS);
 	}
