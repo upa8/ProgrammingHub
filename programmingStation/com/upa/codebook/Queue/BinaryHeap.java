@@ -7,7 +7,7 @@
  *  - Search: O(N)
  */
 
-package com.upa.codebook.queue;
+package com.upa.codebook.Queue;
 
 public class BinaryHeap {
 	private Integer[] heap;

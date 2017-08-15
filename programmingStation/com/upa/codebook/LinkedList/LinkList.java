@@ -1,4 +1,4 @@
-package com.upa.codebook.linkedList;
+package com.upa.codebook.LinkedList;
 
 public class LinkList<T> {
 

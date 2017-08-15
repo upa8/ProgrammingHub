@@ -1,4 +1,4 @@
-package com.upa.websites.codechefTest;
+
 
 import static org.junit.Assert.assertEquals;
 

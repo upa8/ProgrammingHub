@@ -1,4 +1,4 @@
-package com.upa.codebook.bitMagic;
+package com.upa.codebook.BitMagic;
 
 public class BitMagic {
 

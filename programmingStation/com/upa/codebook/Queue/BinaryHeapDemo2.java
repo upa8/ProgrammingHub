@@ -1,4 +1,4 @@
-package com.upa.codebook.queue;
+package com.upa.codebook.Queue;
 
 public class BinaryHeapDemo2<AnyType extends Comparable<? super AnyType>> {
 	// Construct the binary heap.

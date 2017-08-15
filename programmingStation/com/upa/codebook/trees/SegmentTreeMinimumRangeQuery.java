@@ -1,6 +1,6 @@
 package com.upa.codebook.trees;
 
-import com.upa.codebook.bitMagic.NextPowerOf2;
+import com.upa.codebook.BitMagic.NextPowerOf2;
 
 /**
  * Date 08/22/2015

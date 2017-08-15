@@ -1,4 +1,4 @@
-package com.upa.codebook.graph;
+package com.upa.codebook.Graph;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
